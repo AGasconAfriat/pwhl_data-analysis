@@ -32,7 +32,11 @@ df =  pd.read_csv('skater_stats.csv')
 app.layout = (
     # Top div: season selection dropdown and dashboard title
     html.Div(children=[
-        #TODO dropdown,
+        # season selection div
+        html.Div([
+            html.H2('Select Year:', style={'margin-right': '2em'}),
+            dcc.Dropdown(["2024-2025"], value = "2024-2025" ,id='season')
+        ], id="season_select"), # end season selection div
         html.H1('PWHL Player Statistics', 
             style={'textAlign': 'center', 'color': 'black', 'font-size': 56})
     ]), # End top div
@@ -42,13 +46,27 @@ app.layout = (
         # Top part: team and position selector,
         html.Div(children=[
             html.H2("Select team: "),
-            dcc.RadioItems(team_select_list, "MTL", inline=True),
+            dcc.RadioItems(team_select_list, "MTL", id="team_select", inline=True),
             html.Br(style={"line-height": "5"})
             #TODO position selector
-        ]) # End top part
-        #TODO bottow part: graphs and top players
+        ]), # End top part
+        # Bottow part: graphs and top players
+        html.Div(children=[
+            html.Div(children=[], id="plot1"),
+            html.Div(children=[], id="plot2"),
+            html.Div(children=[], id="plot3"),
+            html.Div(children=[], id="top_players")
+        ]) # End bottom part
     ]) # End main panel div
 )# End layout
+
+@app.callback([Output(component_id='plot1', component_property='children'),
+               Output(component_id='plot2', component_property='children'),
+               Output(component_id='plot3', component_property='children')],
+               [Input(component_id='season', component_property='value'),
+                Input(component_id='team_select', component_property='value')])
+def display_stats(input_season, input_teams):
+    return [html.P("testA"), html.P("testB"), html.P("testC")]
 
 if __name__ == '__main__':
     app.run_server()

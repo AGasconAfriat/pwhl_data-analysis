@@ -22,6 +22,9 @@ for team, details in teams.items():
 # Create app
 app = dash.Dash(__name__)
 
+# Set the title of the dashboard
+app.title = "PWHL Player Statistics"
+
 # Clear the layout and do not display exceptions till callback gets executed
 app.config.suppress_callback_exceptions = True
 
@@ -76,7 +79,7 @@ def display_stats(input_season, input_team):
              color="age", color_discrete_sequence=px.colors.sequential.Plotly3)
     fig1.update_layout(xaxis_title="age (in years)", yaxis_title="number of players", showlegend=False)
     # fig2 points distribution
-    # fig3 penalty minutes
+    # fig3 player origin
     # return graphs
     return [dcc.Graph(figure=fig1), html.P("testB"), html.P("testC")]
 

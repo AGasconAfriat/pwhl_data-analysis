@@ -1,128 +1,141 @@
-rank,status,name,team,games played,goals,assists,points,plus/minus,penalty minutes,power play goals,power play assists,short handed goals,shots,short handed assists,game winning goals,first goals,insurance goals,overtime goals,unassisted goals,empty net,shooting percentage,shootout goals,shots in shootouts,shootout winning goals,shootout percentage,jersey number,position,shoots,date of birth,hometown,hometown location,age,home country
-1,rookie,Sarah Fillier,NY,14,5,10,15,4,10,2,2,0,39,0,0,1,1,0,0,0,12.8,0,3,0,0.0,10,forward,right,2000-06-09,Georgetown,ON,24,CAN
-2,,Kendall Coyne Schofield,MIN,15,6,8,14,8,2,0,1,0,46,0,0,1,0,0,1,0,13.0,0,0,0,0.0,26,forward,left,1992-05-25,Palos Heights,IL,32,US
-3,,Taylor Heise,MIN,14,4,10,14,1,0,1,5,0,46,0,2,1,0,1,0,0,8.7,2,5,1,40.0,27,forward,right,2000-03-17,Lake City,MN,24,US
-4,,Claire Thompson,MIN,15,3,11,14,2,4,1,5,0,18,0,0,0,1,0,1,0,16.7,1,2,1,50.0,42,defense,left,1998-01-28,Toronto,ON,27,CAN
-5,,Hannah Miller,TOR,15,7,6,13,4,0,3,3,0,33,0,1,1,0,0,1,0,21.2,0,2,0,0.0,34,forward,left,1996-02-16,North Vancouver,BC,28,CAN
-6,,Renata Fast,TOR,15,3,10,13,-5,16,2,7,0,32,0,1,0,0,0,0,0,9.4,0,0,0,0.0,14,defense,right,1994-10-06,Burlington,ON,30,CAN
-7,,Marie-Philip Poulin,MTL,14,10,2,12,7,11,2,1,1,46,0,4,2,2,0,2,2,21.7,3,5,2,60.0,29,forward,left,1991-03-28,Beauceville,QC,33,CAN
-8,,Alex Carpenter,NY,13,6,6,12,2,0,2,4,0,27,0,2,0,1,1,1,0,22.2,2,3,0,66.7,25,forward,left,1994-04-13,North Reading,MA,30,US
-9,,Sarah Nurse,TOR,15,5,7,12,-5,6,3,3,1,51,0,1,0,0,0,0,0,9.8,1,2,0,50.0,20,forward,left,1995-01-04,Hamilton,ON,30,CAN
-10,,Jessie Eldridge,NY,14,4,8,12,0,8,2,4,0,32,0,2,2,0,1,0,0,12.5,2,3,1,66.7,9,forward,right,1997-12-17,Barrie,ON,27,CAN
-11,,Hilary Knight,BOS,13,5,6,11,1,4,1,1,0,48,0,0,1,0,0,0,0,10.4,1,3,0,33.3,21,forward,right,1989-07-12,Sun Valley,ID,35,US
-12,,Daryl Watts,TOR,15,3,8,11,-6,8,1,5,0,46,1,0,0,0,0,1,0,6.5,0,2,0,0.0,9,forward,left,1999-05-15,Toronto,ON,25,CAN
-13,,Abby Boreen,MTL,14,5,5,10,2,6,1,2,0,29,0,0,1,1,0,0,0,17.2,0,0,0,0.0,24,forward,right,2000-04-03,Somerset,WI,24,US
-14,,Jesse Compher,TOR,15,5,5,10,-1,4,2,3,0,40,0,0,2,0,0,1,0,12.5,0,1,0,0.0,18,forward,right,1999-07-01,Northbrook,IL,25,US
-15,,Megan Keller,BOS,13,3,7,10,-1,10,0,4,0,26,0,1,0,1,0,1,1,11.5,0,0,0,0.0,5,defense,left,1996-05-01,Farmington,MI,28,US
-16,rookie,Jennifer Gardiner,MTL,14,3,7,10,5,2,2,2,0,30,0,1,0,0,0,0,0,10.0,0,0,0,0.0,12,forward,left,2001-09-18,Surrey,BC,23,CAN
-17,,Michela Cava,MIN,15,6,3,9,7,4,2,0,0,25,0,0,2,2,0,0,1,24.0,0,1,0,0.0,86,forward,right,1994-03-26,Thunder Bay,ON,30,CAN
-18,rookie,Hannah Bilka,BOS,13,4,5,9,-4,6,2,3,0,31,0,0,1,0,0,0,0,12.9,1,1,1,100.0,19,forward,left,2001-03-24,Coppell,TX,23,US
-19,,Erin Ambrose,MTL,14,0,9,9,11,2,0,5,0,21,0,0,0,0,0,0,0,0.0,0,3,0,0.0,23,defense,right,1994-04-30,Keswick,ON,30,CAN
-20,,Ella Shelton,NY,9,4,4,8,-1,2,1,2,0,14,0,0,1,0,0,0,0,28.6,0,1,0,0.0,17,defense,left,1998-01-19,Ingersoll,ON,27,CAN
-21,,Abby Roque,NY,14,3,5,8,-8,2,1,3,0,38,0,0,0,0,0,0,0,7.9,0,2,0,0.0,11,forward,right,1997-09-25,Sault Ste. Marie,MI,27,US
-22,,Sophie Jaques,MIN,10,1,7,8,4,2,1,0,0,33,0,0,0,0,0,0,0,3.0,0,1,0,0.0,16,defense,right,2000-10-16,Toronto,ON,24,CAN
-23,rookie,Britta Curl-Salemme,MIN,14,5,2,7,1,10,0,1,0,31,0,2,1,0,1,0,0,16.1,2,4,0,50.0,77,forward,left,2000-03-20,Bismarck,ND,24,US
-24,,Blayre Turnbull,TOR,15,5,2,7,1,8,1,1,0,45,0,1,1,1,0,3,0,11.1,0,0,0,0.0,40,forward,right,1993-07-15,Stellarton,NS,31,CAN
-25,,Laura Stacey,MTL,11,4,3,7,3,4,2,0,0,40,0,1,1,0,1,1,0,10.0,1,3,0,33.3,7,forward,right,1994-05-05,Kleinburg,ON,30,CAN
-26,,Tereza Vanišová,OTT,15,4,3,7,1,28,1,1,0,39,0,1,1,0,0,0,0,10.3,0,1,0,0.0,13,forward,left,1996-01-30,Strakonice,CZE,29,CZE
-27,,Kelly Pannek,MIN,15,2,5,7,3,8,1,0,0,23,0,0,0,0,0,0,0,8.7,0,0,0,0.0,12,forward,right,1995-12-29,Plymouth,MN,29,US
-28,rookie,Cayla Barnes,MTL,14,1,6,7,-3,2,0,5,0,18,0,0,0,0,0,0,0,5.6,0,0,0,0.0,3,defense,right,1999-01-07,Corona,CA,26,US
-29,,Micah Zandee-Hart,NY,14,1,6,7,1,8,1,3,0,25,0,1,0,0,0,0,0,4.0,0,0,0,0.0,28,defense,left,1997-01-13,Saanichton,BC,28,CAN
-30,,Susanna Tapani,BOS,13,5,1,6,1,8,2,0,0,28,0,0,1,0,0,1,0,17.9,1,2,0,50.0,77,forward,left,1993-03-02,Turku,FIN,31,FIN
-31,,Emily Clark,OTT,15,4,2,6,-2,6,0,0,0,43,0,1,2,0,0,1,0,9.3,0,0,0,0.0,26,forward,left,1995-11-28,Saskatoon,SK,29,CAN
-32,,Claire Dalton,MTL,14,3,3,6,4,2,0,0,0,27,1,0,1,0,0,0,0,11.1,0,0,0,0.0,42,forward,right,2000-03-20,Toronto,ON,24,CAN
-33,,Kateřina Mrázová,OTT,10,2,4,6,-3,6,0,1,0,13,0,0,0,1,0,0,0,15.4,0,2,0,0.0,16,forward,left,1992-10-19,Kolín,CZE,32,CZE
-34,,Alina Müller,BOS,12,2,4,6,-3,2,0,0,1,23,0,0,2,0,0,1,0,8.7,1,1,1,100.0,11,forward,left,1998-03-12,Winterthur,SWI,26,SWI
-35,,Jincy Roese,OTT,12,2,4,6,0,4,1,0,0,20,0,1,0,0,0,1,0,10.0,0,0,0,0.0,71,defense,left,1997-05-15,O'Fallon,MO,27,US
-36,,Mikyla Grant-Mentis,MTL,14,2,4,6,7,2,0,0,0,19,0,1,1,0,0,0,0,10.5,0,2,0,0.0,18,forward,left,1998-07-15,Brampton,ON,26,CAN
-37,,Brianne Jenner,OTT,13,1,5,6,-2,4,0,0,0,33,0,1,1,0,0,0,0,3.0,0,0,0,0.0,19,forward,right,1991-05-04,Oakville,ON,33,CAN
-38,,Kali Flanagan,TOR,15,2,3,5,0,4,0,0,0,22,0,0,0,2,0,2,2,9.1,0,0,0,0.0,6,defense,right,1995-09-19,Burlington,MA,29,US
-39,rookie,Danielle Serdachny,OTT,15,2,3,5,0,6,0,0,0,26,0,0,0,0,0,0,0,7.7,0,1,0,0.0,92,forward,right,2001-05-12,Edmonton,AB,23,CAN
-40,,Hannah Brandt,BOS,13,1,4,5,1,6,0,0,0,13,0,1,0,0,0,0,0,7.7,1,1,0,100.0,20,forward,right,1993-11-27,Vadnais Heights,MN,31,US
-41,,Mellissa Channell-Watkins,MIN,14,1,4,5,-1,0,0,0,0,16,0,0,0,0,0,0,0,6.3,0,0,0,0.0,23,defense,left,1994-12-16,Plymouth,MI,30,US
-42,rookie,Maja Nylen Persson,NY,14,1,4,5,6,0,0,1,0,13,0,0,0,0,0,0,0,7.7,0,0,0,0.0,8,defense,right,2000-10-31,Skogsbo,SWE,24,SWE
-43,,Shiann Darkangelo,OTT,15,4,0,4,3,4,0,0,0,22,0,1,0,0,0,1,0,18.2,0,0,0,0.0,27,forward,left,1993-11-28,Brighton,MI,31,US
-44,,Grace Zumwinkle,MIN,7,3,1,4,-3,0,1,1,0,17,0,1,1,0,0,0,1,17.6,1,1,0,100.0,13,forward,right,1999-04-23,Excelsior,MN,25,US
-45,rookie,Brooke McQuigge,MIN,14,3,1,4,-1,0,1,1,0,17,0,0,0,0,0,0,0,17.6,0,1,0,0.0,3,forward,left,2000-06-09,Bowmanville,ON,24,CAN
-46,,Catherine Dubois,MTL,12,2,2,4,1,23,1,1,0,12,0,0,2,0,0,0,0,16.7,0,0,0,0.0,28,forward,left,1995-07-29,Charlesbourg,QC,29,CAN
-47,,Sidney Morin,BOS,13,2,2,4,0,2,0,0,0,22,0,1,0,0,1,0,0,9.1,0,0,0,0.0,7,defense,right,1995-06-06,Minnetonka,MN,29,US
-48,,Chloe Aurard,NY,14,2,2,4,0,2,0,0,0,12,0,1,1,0,0,0,0,16.7,0,0,0,0.0,12,forward,left,1999-03-15,Villard-de-Lans,FRA,25,FRA
-49,rookie,Izzy Daniel,TOR,15,2,2,4,-6,4,0,1,0,22,0,0,0,0,0,0,0,9.1,0,2,0,0.0,8,forward,right,2000-09-29,Minneapolis,MN,24,US
-50,,Emma Maltais,TOR,15,2,2,4,-1,6,0,1,0,23,0,0,0,2,0,1,2,8.7,0,0,0,0.0,27,forward,left,1999-11-04,Burlington,ON,25,CAN
-51,,Ronja Savolainen,OTT,13,1,3,4,5,10,0,0,0,24,0,0,1,0,0,1,0,4.2,0,0,0,0.0,88,defense,left,1997-11-29,Helsinki,FIN,27,FIN
-52,,Alexandra Labelle,MTL,14,1,3,4,5,2,0,0,0,27,0,0,0,0,0,1,0,3.7,0,0,0,0.0,13,forward,left,1996-02-27,"Saint-Louis-de-Gonzague,",,28,
-53,,Kristin O'Neill,MTL,14,1,3,4,-7,10,0,1,1,19,0,1,0,0,0,0,0,5.3,0,0,0,0.0,43,forward,left,1998-03-30,Oakville,ON,26,CAN
-54,rookie,Allyson Simpson,NY,14,1,3,4,-1,4,0,0,0,27,0,0,0,0,0,0,0,3.7,0,0,0,0.0,20,defense,right,2000-12-20,Frisco,TX,24,US
-55,,Brooke Bryant,MIN,15,1,3,4,1,2,0,0,0,10,0,0,0,0,0,0,0,10.0,0,0,0,0.0,17,forward,right,2000-08-22,Linden,CA,24,US
-56,rookie,Julia Gosling,TOR,15,1,3,4,5,4,1,1,0,32,0,0,1,0,0,0,0,3.1,1,1,0,100.0,88,forward,left,2001-02-21,London,ON,23,CAN
-57,rookie,Elle Hartje,NY,11,0,4,4,0,0,0,0,0,11,0,0,0,0,0,0,0,0.0,0,0,0,0.0,13,forward,left,2001-04-13,Detroit,MI,23,US
-58,,Jocelyne Larocque,OTT,15,0,4,4,-1,4,0,0,0,17,0,0,0,0,0,0,0,0.0,0,0,0,0.0,23,defense,left,1988-05-19,Ste. Anne,MB,36,CAN
-59,rookie,Dominique Petrie,MIN,4,3,0,3,2,0,1,0,0,12,0,1,0,0,0,0,0,25.0,0,0,0,0.0,14,forward,right,2001-01-21,Hermosa Beach,CA,24,US
-60,rookie,Mannon McMahon,OTT,15,3,0,3,0,4,1,0,0,16,0,0,2,0,0,1,0,18.8,0,0,0,0.0,18,forward,right,2001-07-29,Maple Grove,MN,23,US
-61,rookie,Shay Maloney,BOS,13,2,1,3,1,2,0,0,0,13,0,0,0,1,0,0,0,15.4,0,0,0,0.0,27,forward,right,1999-08-31,McHenry,IL,25,US
-62,,Mariah Keopple,MTL,14,2,1,3,5,2,0,0,0,16,0,0,0,0,0,0,0,12.5,0,0,0,0.0,2,defense,right,2000-06-27,Menomonie,WI,24,US
-63,,Paetyn Levis,NY,14,2,1,3,-2,4,0,0,0,15,0,0,1,0,0,1,0,13.3,0,0,0,0.0,19,forward,right,1999-11-06,Rogers,MN,25,US
-64,,Claire Butorac,MIN,15,2,1,3,-1,6,0,0,0,9,0,0,2,0,0,0,0,22.2,0,0,0,0.0,7,forward,right,1999-09-24,Andover,MN,25,US
-65,,Emma Woods,TOR,15,2,1,3,3,2,0,0,0,15,0,1,0,0,0,0,0,13.3,0,0,0,0.0,67,forward,right,1995-12-18,Burford,ON,29,CAN
-66,,Kati Tabin,MTL,14,1,2,3,2,4,1,1,0,21,0,1,0,0,0,0,0,4.8,0,0,0,0.0,9,defense,left,1997-04-21,Winnipeg,MB,27,CAN
-67,rookie,Anna Wilgren,MTL,14,1,2,3,4,4,0,0,0,15,0,0,0,1,0,0,0,6.7,0,0,0,0.0,5,defense,left,1999-11-10,Hudson,WI,25,US
-68,,Victoria Bach,OTT,15,1,2,3,1,2,0,1,0,24,0,0,1,0,0,0,0,4.2,0,0,0,0.0,12,forward,left,1996-07-12,Milton,ON,28,CAN
-69,,Ashton Bell,OTT,15,1,2,3,-3,0,0,0,0,14,0,0,0,0,0,0,0,7.1,0,0,0,0.0,21,defense,right,1999-12-07,Deloraine,MB,25,CAN
-70,,Denisa Křížová,MIN,15,1,2,3,2,6,0,1,0,27,0,0,0,0,0,0,0,3.7,1,1,0,100.0,41,forward,left,1994-11-03,Horní Cerekev,CZE,30,CZE
-71,,Aneta Tejralová,OTT,15,1,2,3,1,4,0,1,0,14,0,0,0,0,0,0,0,7.1,0,0,0,0.0,2,defense,left,1996-01-04,Prague,CZE,29,CZE
-72,rookie,Daniela Pejsova,BOS,12,0,3,3,-3,4,0,0,0,9,0,0,0,0,0,0,0,0.0,0,0,0,0.0,55,defense,left,2002-08-14,Teplice,CZE,22,CZE
-73,rookie,Stephanie Markowski,OTT,14,0,3,3,2,4,0,0,0,7,0,0,0,0,0,0,0,0.0,0,0,0,0.0,6,defense,right,2001-08-24,Edmonton,AB,23,CAN
-74,,Maureen Murphy,MTL,12,2,0,2,-2,8,0,0,0,16,0,0,0,0,0,0,0,12.5,0,1,0,0.0,21,forward,right,1999-12-15,Buffalo,NY,25,US
-75,rookie,Katy Knoll,MIN,12,1,1,2,0,4,0,0,0,8,0,0,0,1,0,0,0,12.5,0,0,0,0.0,6,forward,right,2001-01-16,Amherst,NY,24,US
-76,rookie,Sydney Bard,BOS,13,1,1,2,-4,6,1,1,0,10,0,0,0,0,0,0,0,10.0,0,0,0,0.0,15,defense,right,2001-01-15,New Hartford,NY,24,US
-77,,Emily Brown,BOS,13,1,1,2,1,4,0,0,0,10,0,1,0,0,0,0,0,10.0,0,0,0,0.0,2,defense,left,1998-12-30,Blaine,MN,26,US
-78,rookie,Gabby Rosenthal,NY,13,1,1,2,7,2,0,0,0,15,0,0,0,0,0,0,0,6.7,0,0,0,0.0,15,forward,right,1999-09-13,Blaine,MN,25,US
-79,,Jaime Bourbonnais,NY,14,1,1,2,-3,6,1,0,0,19,0,0,0,1,0,0,0,5.3,0,0,0,0.0,14,defense,right,1998-09-09,Mississauga,ON,26,CAN
-80,,Jade Downie-Landry,NY,14,1,1,2,0,12,0,0,1,26,0,0,0,1,0,1,1,3.8,0,0,0,0.0,27,forward,left,1995-10-03,"Saint-Jean-sur-Richelieu,",,29,
-81,,Elizabeth Giguère,NY,14,1,1,2,2,4,0,1,0,20,0,0,0,0,0,0,0,5.0,0,1,0,0.0,18,forward,right,1997-05-08,Quebec City,QC,27,CAN
-82,rookie,Lina Ljungblom,MTL,14,1,1,2,-3,4,0,0,0,23,0,0,0,0,0,0,0,4.3,0,0,0,0.0,25,forward,left,2001-10-15,Skövde,SWE,23,SWE
-83,,Noora Tulus,NY,14,1,1,2,-7,6,0,0,0,17,0,0,1,0,0,0,0,5.9,1,3,0,33.3,40,forward,right,1995-08-15,Vantaa,FIN,29,FIN
-84,,Amanda Boulier,MTL,9,0,2,2,1,2,0,0,0,6,0,0,0,0,0,0,0,0.0,0,0,0,0.0,44,defense,right,1993-03-30,Watertown,CT,31,US
-85,,Zoe Boyd,OTT,11,0,2,2,-1,8,0,0,0,5,0,0,0,0,0,0,0,0.0,0,0,0,0.0,3,defense,left,2000-08-09,Caledon East,ON,24,CAN
-86,,Amanda Pelkey,BOS,11,0,2,2,-2,8,0,1,0,13,0,0,0,0,0,0,0,0.0,0,0,0,0.0,16,forward,right,1993-05-29,Montpelier,VT,31,US
-87,rookie,Mae Batherson,MIN,13,0,2,2,6,6,0,0,0,12,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,defense,left,2000-12-05,New Minas,NS,24,CAN
-88,,Jessica Digirolamo,BOS,13,0,2,2,-2,4,0,0,0,16,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,defense,left,1999-02-13,Mississauga,ON,25,CAN
-89,,Gabbie Hughes,OTT,14,0,2,2,-2,10,0,0,0,19,0,0,0,0,0,0,0,0.0,0,0,0,0.0,17,forward,left,1999-10-04,Lino Lakes,MN,25,US
-90,rookie,Rylind MacKinnon,TOR,14,0,2,2,0,25,0,0,0,11,1,0,0,0,0,0,0,0.0,0,0,0,0.0,55,defense,left,2000-03-05,Cranbrook,BC,24,CAN
-91,,Liz Schepers,MIN,14,0,2,2,-2,0,0,0,0,14,0,0,0,0,0,0,0,0.0,0,0,0,0.0,21,forward,left,1999-02-13,Mound,MN,25,US
-92,,Lee Stecklein,MIN,15,0,2,2,1,4,0,1,0,17,0,0,0,0,0,0,0,0.0,0,0,0,0.0,2,defense,left,1994-04-23,Roseville,MN,30,US
-93,,Jessica Kondas,TOR,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,100.0,0,0,0,0.0,2,defense,right,2000-01-03,Calgary,AB,25,CAN
-94,,Loren Gabel,BOS,8,1,0,1,-4,0,1,0,0,4,0,0,0,0,0,0,0,25.0,0,0,0,0.0,36,forward,left,1997-07-24,Kitchener,ON,27,CAN
-95,,Maggie Flaherty,MIN,13,1,0,1,-3,10,0,0,0,16,0,1,0,0,0,1,0,6.3,0,0,0,0.0,19,defense,left,2000-06-02,Lakeville,MN,24,US
-96,,Anna Meixner,OTT,13,1,0,1,1,0,0,0,0,12,0,0,1,0,0,0,0,8.3,0,0,0,0.0,94,forward,left,1994-06-16,Zell Am See,AUT,30,AUT
-97,,Jamie Lee Rattray,BOS,13,1,0,1,-5,4,0,0,0,17,0,0,1,0,0,0,0,5.9,0,0,0,0.0,47,forward,left,1992-09-30,Kanata,ON,32,CAN
-98,rookie,Emmy Fecteau,NY,14,1,0,1,-1,4,0,0,0,15,0,0,0,0,0,0,0,6.7,0,0,0,0.0,29,forward,left,1999-04-07,Saint-Odilon-de-Cranbourn,,25,
-99,,Brooke Hobson,NY,14,1,0,1,-4,6,0,0,0,9,0,0,0,0,0,0,0,11.1,0,0,0,0.0,6,defense,left,1999-05-27,Prince Albert,SK,25,CAN
-100,,Maggie Connors,TOR,15,1,0,1,-6,2,0,0,0,13,0,0,0,0,0,0,0,7.7,0,0,0,0.0,22,forward,left,2000-10-22,St. John's,NL,24,CAN
-101,,Natalie Buchbinder,MIN,9,0,1,1,0,0,0,0,0,9,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,defense,right,1999-01-22,Fairport,NY,26,US
-102,,Taylor Girard,NY,9,0,1,1,1,6,0,0,0,5,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,forward,left,1998-07-17,Macomb,MI,26,US
-103,,Alexa Vasko,OTT,9,0,1,1,2,4,0,0,0,7,0,0,0,0,0,0,0,0.0,0,0,0,0.0,10,forward,left,1999-02-07,St. Catharines,ON,25,CAN
-104,,Emma Greco,BOS,11,0,1,1,-3,4,0,0,0,9,0,0,0,0,0,0,0,0.0,0,0,0,0.0,25,defense,left,1995-03-06,Burlington,ON,29,CAN
-105,,Lexie Adzija,BOS,13,0,1,1,-7,0,0,1,0,15,0,0,0,0,0,0,0,0.0,0,0,0,0.0,88,forward,left,2000-06-30,St. Thomas,ON,24,CAN
-106,rookie,Dara Greig,MTL,13,0,1,1,0,4,0,0,0,8,0,0,0,0,0,0,0,0.0,0,0,0,0.0,17,forward,left,2000-12-30,Camden,NJ,24,US
-107,,Anna Kjellbin,MTL,13,0,1,1,-4,4,0,0,0,12,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,defense,right,1994-03-16,Göteberg,SWE,30,SWE
-108,,Theresa Schafzahl,BOS,13,0,1,1,-2,2,0,0,0,15,0,0,0,0,0,0,0,0.0,0,0,0,0.0,37,forward,left,2000-04-12,Weiz,AUT,24,AUT
-109,,Sophie Shirley,BOS,13,0,1,1,0,8,0,0,0,8,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,forward,right,1999-06-30,Saskatoon,SK,25,CAN
-110,rookie,Lauren Bernard,TOR,15,0,1,1,-2,2,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,19,defense,left,2001-07-15,Madison,OH,23,US
-111,,Savannah Harmon,TOR,15,0,1,1,-4,0,0,1,0,24,0,0,0,0,0,0,0,0.0,0,0,0,0.0,15,defense,left,1995-10-27,Downers Grove,IL,29,US
-112,rookie,Klara Hymlarova,MIN,15,0,1,1,-1,0,0,1,0,14,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,forward,left,1999-02-27,Opava,CZE,25,CZE
-113,,Allie Munroe,TOR,15,0,1,1,0,6,0,0,0,11,0,0,0,0,0,0,0,0.0,0,0,0,0.0,12,defense,left,1997-04-20,Yarmouth,NS,27,CAN
-114,,Jessica Adolfsson,OTT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,defense,left,1998-07-15,Linköping,SWE,26,SWE
-115,,Catherine Daoust,MTL,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,4,defense,right,1995-02-21,L’Île-Bizard,QC,29,CAN
-118,rookie,Charlotte Akervik,MIN,2,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,8,defense,right,2001-02-17,Eau Claire,WI,23,US
-119,,Kelly Babstock,BOS,3,0,0,0,-1,2,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,8,forward,right,1992-08-04,Mississauga,ON,32,CAN
-120,,Taylor Baker,NY,3,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,4,defense,right,1997-07-30,Toronto,ON,27,CAN
-121,,Samantha Isbell,OTT,3,0,0,0,-1,2,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,5,defense,left,1998-02-17,Thunder Bay,ON,26,CAN
-122,rookie,Anneke Rankila,TOR,3,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0.0,0,0,0,0.0,25,forward,right,1999-11-10,Lino Lakes,MN,25,US
-124,rookie,Megan Carter,TOR,4,0,0,0,1,4,0,0,0,6,0,0,0,0,0,0,0,0.0,0,0,0,0.0,23,defense,left,2001-05-23,Milton,ON,23,CAN
-129,,Taylor House,OTT,5,0,0,0,-2,2,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,forward,left,1998-09-29,Joliet,IL,26,US
-130,,Olivia Knowles,NY,6,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,7,defense,right,1999-01-24,Campbell River,BC,26,CAN
-131,,Kayla Vespa,NY,6,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,81,forward,left,1997-04-01,Hamilton,ON,27,CAN
-133,,Jill Saulnier,BOS,8,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0.0,0,0,0,0.0,44,forward,left,1992-03-07,Halifax,NS,32,CAN
-135,rookie,Kaitlyn O'Donohoe,MIN,9,0,0,0,-2,0,0,0,0,5,0,0,0,0,0,0,0,0.0,0,0,0,0.0,11,forward,right,2001-09-20,Atlanta,GA,23,US
-140,,Hayley Scamurra,TOR,11,0,0,0,-1,6,0,0,0,29,0,0,0,0,0,0,0,0.0,0,1,0,0.0,16,forward,left,1994-12-14,Buffalo,NY,30,US
+rank,status,name,team,games played,goals,assists,points,plus/minus,penalty minutes,power play goals,power play assists,short handed goals,shots,short handed assists,game winning goals,first goals,insurance goals,overtime goals,unassisted goals,empty net,shooting percentage,shootout goals,shots in shootouts,shootout winning goals,shootout percentage,jersey number,position,shoots,date of birth,hometown,hometown location,home country,age
+1,,Hannah Miller,TOR,18,8,10,18,7,2,3,6,0,39,0,1,1,0,0,1,0,20.5,0,2,0,0.0,34,forward,left,1996-02-16,North Vancouver,BC,CAN,29
+2,,Kendall Coyne Schofield,MIN,18,7,10,17,8,2,0,1,0,50,0,0,2,0,0,1,0,14.0,0,0,0,0.0,26,forward,left,1992-05-25,Palos Heights,IL,US,32
+3,rookie,Sarah Fillier,NY,17,5,12,17,3,10,2,3,0,54,0,0,1,1,0,0,0,9.3,0,3,0,0.0,10,forward,right,2000-06-09,Georgetown,ON,CAN,24
+4,,Hilary Knight,BOS,17,8,8,16,4,4,1,2,0,60,0,2,1,0,0,0,0,13.3,1,3,0,33.3,21,forward,right,1989-07-12,Sun Valley,ID,US,35
+5,,Taylor Heise,MIN,17,4,12,16,0,4,1,5,0,50,0,2,1,0,1,0,0,8.0,2,5,1,40.0,27,forward,right,2000-03-17,Lake City,MN,US,24
+6,,Renata Fast,TOR,18,4,12,16,-3,20,2,8,0,38,0,2,0,0,1,1,0,10.5,0,0,0,0.0,14,defense,right,1994-10-06,Burlington,ON,CAN,30
+7,,Jessie Eldridge,NY,17,6,9,15,0,10,3,5,0,44,0,2,2,0,1,0,0,13.6,2,3,1,66.7,9,forward,right,1997-12-17,Barrie,ON,CAN,27
+8,,Daryl Watts,TOR,18,6,9,15,-5,8,3,5,0,66,1,1,0,0,1,1,0,9.1,0,2,0,0.0,9,forward,left,1999-05-15,Toronto,ON,CAN,25
+9,,Claire Thompson,MIN,18,3,11,14,-1,4,1,5,0,26,0,0,0,1,0,1,0,11.5,1,2,1,50.0,42,defense,left,1998-01-28,Toronto,ON,CAN,27
+10,,Marie-Philip Poulin,MTL,15,11,2,13,9,13,2,1,1,49,0,4,2,2,0,2,2,22.4,3,5,2,60.0,29,forward,left,1991-03-28,Beauceville,QC,CAN,33
+11,,Sophie Jaques,MIN,13,3,10,13,1,2,1,0,0,40,0,0,1,0,0,0,0,7.5,0,1,0,0.0,16,defense,right,2000-10-16,Toronto,ON,CAN,24
+12,,Michela Cava,MIN,18,7,5,12,8,4,2,0,0,31,0,0,2,2,0,0,1,22.6,0,1,0,0.0,86,forward,right,1994-03-26,Thunder Bay,ON,CAN,30
+13,,Alex Carpenter,NY,13,6,6,12,2,0,2,4,0,27,0,2,0,1,1,1,0,22.2,2,3,0,66.7,25,forward,left,1994-04-13,North Reading,MA,US,30
+14,,Abby Boreen,MTL,15,6,6,12,4,6,1,2,0,31,0,0,1,1,0,0,0,19.4,0,0,0,0.0,24,forward,right,2000-04-03,Somerset,WI,US,24
+15,,Jesse Compher,TOR,18,6,6,12,0,8,3,4,0,51,0,0,2,1,0,1,0,11.8,0,1,0,0.0,18,forward,right,1999-07-01,Northbrook,IL,US,25
+16,,Sarah Nurse,TOR,15,5,7,12,-5,6,3,3,1,51,0,1,0,0,0,0,0,9.8,1,2,0,50.0,20,forward,left,1995-01-04,Hamilton,ON,CAN,30
+17,,Megan Keller,BOS,17,5,7,12,3,12,0,4,0,34,0,1,0,2,0,1,1,14.7,0,0,0,0.0,5,defense,left,1996-05-01,Farmington,MI,US,28
+18,rookie,Jennifer Gardiner,MTL,15,3,9,12,7,2,2,2,0,32,0,1,0,0,0,0,0,9.4,0,0,0,0.0,12,forward,left,2001-09-18,Surrey,BC,CAN,23
+19,,Tereza Vanišová,OTT,17,8,3,11,1,28,2,1,0,51,0,2,1,1,0,0,0,15.7,0,1,0,0.0,13,forward,left,1996-01-30,Strakonice,CZE,CZE,29
+20,,Alina Müller,BOS,16,4,7,11,0,4,1,0,1,30,0,0,3,1,0,2,1,13.3,1,1,1,100.0,11,forward,left,1998-03-12,Winterthur,SWI,SWI,26
+21,,Erin Ambrose,MTL,15,0,10,10,13,2,0,5,0,24,0,0,0,0,0,0,0,0.0,0,3,0,0.0,23,defense,right,1994-04-30,Keswick,ON,CAN,30
+22,,Susanna Tapani,BOS,17,7,2,9,2,8,2,0,0,36,0,1,2,0,0,1,0,19.4,1,2,0,50.0,77,forward,left,1993-03-02,Turku,FIN,FIN,31
+23,,Ella Shelton,NY,12,5,4,9,-5,2,2,2,0,20,0,0,1,0,0,0,0,25.0,0,1,0,0.0,17,defense,left,1998-01-19,Ingersoll,ON,CAN,27
+24,rookie,Hannah Bilka,BOS,13,4,5,9,-4,6,2,3,0,31,0,0,1,0,0,0,0,12.9,1,1,1,100.0,19,forward,left,2001-03-24,Coppell,TX,US,23
+25,,Emily Clark,OTT,17,4,5,9,0,6,0,1,0,51,0,1,2,0,0,1,0,7.8,0,0,0,0.0,26,forward,left,1995-11-28,Saskatoon,SK,CAN,29
+26,,Abby Roque,NY,17,3,6,9,-7,2,1,3,0,48,0,0,0,0,0,0,0,6.3,0,2,0,0.0,11,forward,right,1997-09-25,Sault Ste. Marie,MI,US,27
+27,rookie,Britta Curl-Salemme,MIN,17,6,2,8,-2,12,0,1,0,41,0,2,1,0,1,0,0,14.6,2,4,0,50.0,77,forward,left,2000-03-20,Bismarck,ND,US,24
+28,,Blayre Turnbull,TOR,18,5,3,8,1,8,1,2,0,52,0,1,1,1,0,3,0,9.6,0,0,0,0.0,40,forward,right,1993-07-15,Stellarton,NS,CAN,31
+29,,Jincy Roese,OTT,14,2,6,8,-1,4,1,1,0,22,0,1,0,0,0,1,0,9.1,0,0,0,0.0,71,defense,left,1997-05-15,O'Fallon,MO,US,27
+30,,Kelly Pannek,MIN,18,2,6,8,1,8,1,0,0,30,0,0,0,0,0,0,0,6.7,0,0,0,0.0,12,forward,right,1995-12-29,Plymouth,MN,US,29
+31,rookie,Cayla Barnes,MTL,15,1,7,8,-3,2,0,5,0,19,0,0,0,0,0,0,0,5.3,0,0,0,0.0,3,defense,right,1999-01-07,Corona,CA,US,26
+32,,Laura Stacey,MTL,12,4,3,7,3,4,2,0,0,41,0,1,1,0,1,1,0,9.8,1,3,0,33.3,7,forward,right,1994-05-05,Kleinburg,ON,CAN,30
+33,,Shiann Darkangelo,OTT,17,4,3,7,4,6,0,1,0,26,0,1,0,0,0,1,0,15.4,0,0,0,0.0,27,forward,left,1993-11-28,Brighton,MI,US,31
+34,,Claire Dalton,MTL,15,3,4,7,5,2,0,0,0,29,1,0,1,0,0,0,0,10.3,0,0,0,0.0,42,forward,right,2000-03-20,Toronto,ON,CAN,24
+35,,Mikyla Grant-Mentis,MTL,15,3,4,7,8,2,0,0,0,21,0,1,1,0,0,0,0,14.3,0,2,0,0.0,18,forward,left,1998-07-15,Brampton,ON,CAN,26
+36,,Gabbie Hughes,OTT,16,3,4,7,-1,10,1,1,1,24,0,0,1,0,0,0,0,12.5,0,0,0,0.0,17,forward,left,1999-10-04,Lino Lakes,MN,US,25
+37,,Brianne Jenner,OTT,15,2,5,7,-1,6,1,0,0,40,0,1,1,0,0,0,0,5.0,0,0,0,0.0,19,forward,right,1991-05-04,Oakville,ON,CAN,33
+38,,Hannah Brandt,BOS,17,1,6,7,4,8,0,0,0,15,0,1,0,0,0,0,0,6.7,1,1,0,100.0,20,forward,right,1993-11-27,Vadnais Heights,MN,US,31
+39,,Micah Zandee-Hart,NY,17,1,6,7,-5,10,1,3,0,31,0,1,0,0,0,0,0,3.2,0,0,0,0.0,28,defense,left,1997-01-13,Saanichton,BC,CAN,28
+40,rookie,Brooke McQuigge,MIN,17,5,1,6,-1,2,1,1,0,22,0,0,0,0,0,0,0,22.7,0,1,0,0.0,3,forward,left,2000-06-09,Bowmanville,ON,CAN,24
+41,,Emma Maltais,TOR,18,3,3,6,-1,8,0,2,0,26,0,0,1,2,0,2,2,11.5,0,0,0,0.0,27,forward,left,1999-11-04,Burlington,ON,CAN,25
+42,,Kateřina Mrázová,OTT,11,2,4,6,-3,6,0,1,0,13,0,0,0,1,0,0,0,15.4,0,2,0,0.0,16,forward,left,1992-10-19,Kolín,CZE,CZE,32
+43,rookie,Julia Gosling,TOR,18,2,4,6,5,4,2,2,0,37,0,0,1,0,0,0,0,5.4,1,1,0,100.0,88,forward,left,2001-02-21,London,ON,CAN,23
+44,,Ronja Savolainen,OTT,15,1,5,6,7,12,0,0,0,27,1,0,1,0,0,1,0,3.7,0,0,0,0.0,88,defense,left,1997-11-29,Helsinki,FIN,FIN,27
+45,,Mellissa Channell-Watkins,MIN,17,1,5,6,0,0,0,0,0,17,0,0,0,0,0,0,0,5.9,0,0,0,0.0,23,defense,left,1994-12-16,Plymouth,MI,US,30
+46,rookie,Shay Maloney,BOS,17,3,2,5,4,4,0,0,0,23,0,0,0,1,0,0,0,13.0,0,0,0,0.0,27,forward,right,1999-08-31,McHenry,IL,US,25
+47,,Jamie Lee Rattray,BOS,17,3,2,5,-2,6,0,0,0,21,0,0,1,1,0,1,0,14.3,0,0,0,0.0,47,forward,left,1992-09-30,Kanata,ON,CAN,32
+48,rookie,Danielle Serdachny,OTT,17,2,3,5,-1,6,0,0,0,29,0,0,0,0,0,0,0,6.9,0,1,0,0.0,92,forward,right,2001-05-12,Edmonton,AB,CAN,23
+49,rookie,Izzy Daniel,TOR,18,2,3,5,-6,6,0,1,0,24,0,0,0,0,0,0,0,8.3,0,2,0,0.0,8,forward,right,2000-09-29,Minneapolis,MN,US,24
+50,,Kali Flanagan,TOR,18,2,3,5,1,4,0,0,0,25,0,0,0,2,0,2,2,8.0,0,0,0,0.0,6,defense,right,1995-09-19,Burlington,MA,US,29
+51,rookie,Maja Nylen Persson,NY,17,1,4,5,3,2,0,1,0,17,0,0,0,0,0,0,0,5.9,0,0,0,0.0,8,defense,right,2000-10-31,Skogsbo,SWE,SWE,24
+52,,Aneta Tejralová,OTT,17,1,4,5,5,8,0,2,0,16,0,0,0,0,0,0,0,6.3,0,0,0,0.0,2,defense,left,1996-01-04,Prague,CZE,CZE,29
+53,,Jocelyne Larocque,OTT,17,0,5,5,-1,12,0,1,0,21,0,0,0,0,0,0,0,0.0,0,0,0,0.0,23,defense,left,1988-05-19,Ste. Anne,MB,CAN,36
+54,rookie,Mannon McMahon,OTT,17,4,0,4,1,4,1,0,0,20,0,0,3,0,0,1,0,20.0,0,0,0,0.0,18,forward,right,2001-07-29,Maple Grove,MN,US,23
+55,,Grace Zumwinkle,MIN,10,3,1,4,-8,0,1,1,0,24,0,1,1,0,0,0,1,12.5,1,1,0,100.0,13,forward,right,1999-04-23,Excelsior,MN,US,25
+56,,Mariah Keopple,MTL,15,3,1,4,5,4,0,0,0,17,0,1,0,0,0,0,0,17.6,0,0,0,0.0,2,defense,right,2000-06-27,Menomonie,WI,US,24
+57,rookie,Lina Ljungblom,MTL,15,3,1,4,-1,4,0,0,0,27,0,0,1,1,0,0,0,11.1,0,0,0,0.0,25,forward,left,2001-10-15,Skövde,SWE,SWE,23
+58,,Emma Woods,TOR,18,3,1,4,3,6,0,0,0,20,0,2,0,0,0,0,0,15.0,0,0,0,0.0,67,forward,right,1995-12-18,Burford,ON,CAN,29
+59,,Catherine Dubois,MTL,12,2,2,4,1,23,1,1,0,12,0,0,2,0,0,0,0,16.7,0,0,0,0.0,28,forward,left,1995-07-29,Charlesbourg,QC,CAN,29
+60,,Chloe Aurard,NY,17,2,2,4,-1,2,0,0,0,13,0,1,1,0,0,0,0,15.4,0,0,0,0.0,12,forward,left,1999-03-15,Villard-de-Lans,FRA,FRA,25
+61,,Victoria Bach,OTT,17,2,2,4,1,2,0,1,0,27,0,0,1,0,0,0,0,7.4,0,0,0,0.0,12,forward,left,1996-07-12,Milton,ON,CAN,28
+62,,Sidney Morin,BOS,17,2,2,4,3,4,0,0,0,30,0,1,0,0,1,0,0,6.7,0,0,0,0.0,7,defense,right,1995-06-06,Minnetonka,MN,US,29
+63,,Alexandra Labelle,MTL,15,1,3,4,6,2,0,0,0,27,0,0,0,0,0,1,0,3.7,0,0,0,0.0,13,forward,left,1996-02-27,"Saint-Louis-de-Gonzague,",,,28
+64,,Kristin O'Neill,MTL,15,1,3,4,-7,12,0,1,1,20,0,1,0,0,0,0,0,5.0,0,0,0,0.0,43,forward,left,1998-03-30,Oakville,ON,CAN,26
+65,rookie,Allyson Simpson,NY,17,1,3,4,-8,4,0,0,0,27,0,0,0,0,0,0,0,3.7,0,0,0,0.0,20,defense,right,2000-12-20,Frisco,TX,US,24
+66,,Brooke Bryant,MIN,18,1,3,4,-1,6,0,0,0,10,0,0,0,0,0,0,0,10.0,0,0,0,0.0,17,forward,right,2000-08-22,Linden,CA,US,24
+67,,Amanda Boulier,MTL,10,0,4,4,4,2,0,0,0,6,0,0,0,0,0,0,0,0.0,0,0,0,0.0,44,defense,right,1993-03-30,Watertown,CT,US,31
+68,rookie,Elle Hartje,NY,14,0,4,4,-6,2,0,0,0,15,0,0,0,0,0,0,0,0.0,0,0,0,0.0,13,forward,left,2001-04-13,Detroit,MI,US,23
+69,,Sophie Shirley,BOS,17,0,4,4,3,27,0,1,0,12,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,forward,right,1999-06-30,Saskatoon,SK,CAN,25
+70,rookie,Dominique Petrie,MIN,7,3,0,3,-1,0,1,0,0,15,0,1,0,0,0,0,0,20.0,0,0,0,0.0,14,forward,right,2001-01-21,Hermosa Beach,CA,US,24
+71,,Maureen Murphy,MTL,13,2,1,3,0,8,0,0,0,16,0,0,0,0,0,0,0,12.5,0,1,0,0.0,21,forward,right,1999-12-15,Buffalo,NY,US,25
+72,,Paetyn Levis,NY,17,2,1,3,-4,4,0,0,0,18,0,0,1,0,0,1,0,11.1,0,0,0,0.0,19,forward,right,1999-11-06,Rogers,MN,US,25
+73,,Claire Butorac,MIN,18,2,1,3,-1,6,0,0,0,11,0,0,2,0,0,0,0,18.2,0,0,0,0.0,7,forward,right,1999-09-24,Andover,MN,US,25
+74,,Kati Tabin,MTL,15,1,2,3,3,4,1,1,0,22,0,1,0,0,0,0,0,4.5,0,0,0,0.0,9,defense,left,1997-04-21,Winnipeg,MB,CAN,27
+75,rookie,Anna Wilgren,MTL,15,1,2,3,8,4,0,0,0,15,0,0,0,1,0,0,0,6.7,0,0,0,0.0,5,defense,left,1999-11-10,Hudson,WI,US,25
+76,,Ashton Bell,OTT,16,1,2,3,-2,0,0,0,0,14,0,0,0,0,0,0,0,7.1,0,0,0,0.0,21,defense,right,1999-12-07,Deloraine,MB,CAN,25
+77,rookie,Sydney Bard,BOS,17,1,2,3,-2,8,1,1,0,12,0,0,0,0,0,0,0,8.3,0,0,0,0.0,15,defense,right,2001-01-15,New Hartford,NY,US,24
+78,,Denisa Křížová,MIN,18,1,2,3,-1,6,0,1,0,31,0,0,0,0,0,0,0,3.2,1,1,0,100.0,41,forward,left,1994-11-03,Horní Cerekev,CZE,CZE,30
+79,rookie,Stephanie Markowski,OTT,16,0,3,3,4,6,0,0,0,7,0,0,0,0,0,0,0,0.0,0,0,0,0.0,6,defense,right,2001-08-24,Edmonton,AB,CAN,23
+80,rookie,Daniela Pejsova,BOS,16,0,3,3,-3,4,0,0,0,10,0,0,0,0,0,0,0,0.0,0,0,0,0.0,55,defense,left,2002-08-14,Teplice,CZE,CZE,22
+81,,Jessica Digirolamo,BOS,17,0,3,3,0,4,0,0,0,21,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,defense,left,1999-02-13,Mississauga,ON,CAN,26
+82,,Lee Stecklein,MIN,18,0,3,3,-4,6,0,1,0,23,0,0,0,0,0,0,0,0.0,0,0,0,0.0,2,defense,left,1994-04-23,Roseville,MN,US,30
+83,,Jill Saulnier,BOS,12,1,1,2,1,2,0,0,0,9,0,0,0,0,0,0,0,11.1,0,0,0,0.0,44,forward,left,1992-03-07,Halifax,NS,CAN,32
+84,rookie,Katy Knoll,MIN,13,1,1,2,-1,4,0,0,0,8,0,0,0,1,0,0,0,12.5,0,0,0,0.0,6,forward,right,2001-01-16,Amherst,NY,US,24
+85,rookie,Gabby Rosenthal,NY,16,1,1,2,0,4,0,0,0,18,0,0,0,0,0,0,0,5.6,0,0,0,0.0,15,forward,right,1999-09-13,Blaine,MN,US,25
+86,,Jaime Bourbonnais,NY,17,1,1,2,-6,12,1,0,0,26,0,0,0,1,0,0,0,3.8,0,0,0,0.0,14,defense,right,1998-09-09,Mississauga,ON,CAN,26
+87,,Emily Brown,BOS,17,1,1,2,3,12,0,0,0,11,0,1,0,0,0,0,0,9.1,0,0,0,0.0,2,defense,left,1998-12-30,Blaine,MN,US,26
+88,,Jade Downie-Landry,NY,17,1,1,2,-4,14,0,0,1,26,0,0,0,1,0,1,1,3.8,0,0,0,0.0,27,forward,left,1995-10-03,"Saint-Jean-sur-Richelieu,",,,29
+89,,Elizabeth Giguère,NY,17,1,1,2,-5,4,0,1,0,27,0,0,0,0,0,0,0,3.7,0,1,0,0.0,18,forward,right,1997-05-08,Quebec City,QC,CAN,27
+90,,Noora Tulus,NY,17,1,1,2,-8,6,0,0,0,24,0,0,1,0,0,0,0,4.2,1,3,0,33.3,40,forward,right,1995-08-15,Vantaa,FIN,FIN,29
+91,,Alexa Vasko,OTT,11,0,2,2,3,4,0,0,0,8,0,0,0,0,0,0,0,0.0,0,0,0,0.0,10,forward,left,1999-02-07,St. Catharines,ON,CAN,26
+92,,Zoe Boyd,OTT,12,0,2,2,-1,8,0,0,0,7,0,0,0,0,0,0,0,0.0,0,0,0,0.0,3,defense,left,2000-08-09,Caledon East,ON,CAN,24
+93,,Emma Greco,BOS,15,0,2,2,1,4,0,0,0,13,0,0,0,0,0,0,0,0.0,0,0,0,0.0,25,defense,left,1995-03-06,Burlington,ON,CAN,29
+94,,Amanda Pelkey,BOS,15,0,2,2,-3,8,0,1,0,15,0,0,0,0,0,0,0,0.0,0,0,0,0.0,16,forward,right,1993-05-29,Montpelier,VT,US,31
+95,rookie,Mae Batherson,MIN,16,0,2,2,6,6,0,0,0,13,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,defense,left,2000-12-05,New Minas,NS,CAN,24
+96,,Rebecca Leslie,OTT,17,0,2,2,-3,2,0,0,0,18,0,0,0,0,0,0,0,0.0,0,0,0,0.0,37,forward,right,1996-05-08,Ottawa,ON,CAN,28
+97,rookie,Rylind MacKinnon,TOR,17,0,2,2,-1,27,0,0,0,12,1,0,0,0,0,0,0,0.0,0,0,0,0.0,55,defense,left,2000-03-05,Cranbrook,BC,CAN,24
+98,,Theresa Schafzahl,BOS,17,0,2,2,1,2,0,0,0,18,0,0,0,0,0,0,0,0.0,0,0,0,0.0,37,forward,left,2000-04-12,Weiz,AUT,AUT,24
+99,,Liz Schepers,MIN,17,0,2,2,-2,0,0,0,0,15,0,0,0,0,0,0,0,0.0,0,0,0,0.0,21,forward,left,1999-02-13,Mound,MN,US,26
+100,,Jessica Kondas,TOR,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,100.0,0,0,0,0.0,2,defense,right,2000-01-03,Calgary,AB,CAN,25
+101,,Loren Gabel,BOS,9,1,0,1,-4,0,1,0,0,6,0,0,0,0,0,0,0,16.7,0,0,0,0.0,36,forward,left,1997-07-24,Kitchener,ON,CAN,27
+102,,Anna Meixner,OTT,15,1,0,1,2,0,0,0,0,12,0,0,1,0,0,0,0,8.3,0,0,0,0.0,94,forward,left,1994-06-16,Zell Am See,AUT,AUT,30
+103,,Maggie Flaherty,MIN,16,1,0,1,-2,10,0,0,0,19,0,1,0,0,0,1,0,5.3,0,0,0,0.0,19,defense,left,2000-06-02,Lakeville,MN,US,24
+104,,Brooke Hobson,NY,16,1,0,1,-5,6,0,0,0,10,0,0,0,0,0,0,0,10.0,0,0,0,0.0,6,defense,left,1999-05-27,Prince Albert,SK,CAN,25
+105,rookie,Emmy Fecteau,NY,17,1,0,1,-6,4,0,0,0,19,0,0,0,0,0,0,0,5.3,0,0,0,0.0,29,forward,left,1999-04-07,Saint-Odilon-de-Cranbourn,,,25
+106,,Maggie Connors,TOR,18,1,0,1,-6,6,0,0,0,16,0,0,0,0,0,0,0,6.3,0,0,0,0.0,22,forward,left,2000-10-22,St. John's,NL,CAN,24
+107,,Natalie Spooner,TOR,2,0,1,1,1,0,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,24,forward,right,1990-10-17,Scarborough,ON,CAN,34
+108,rookie,Kayle Osborne,NY,6,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,82,goalie,left,2002-02-28,Westport,ON,CAN,22
+109,,Natalie Buchbinder,MIN,9,0,1,1,0,0,0,0,0,9,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,defense,right,1999-01-22,Fairport,NY,US,26
+110,,Taylor Girard,NY,12,0,1,1,-1,6,0,0,0,6,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,forward,left,1998-07-17,Macomb,MI,US,26
+111,,Anna Kjellbin,MTL,13,0,1,1,-4,4,0,0,0,12,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,defense,right,1994-03-16,Göteberg,SWE,SWE,30
+112,,Clair Degeorge,MTL,14,0,1,1,4,0,0,0,0,6,0,0,0,0,0,0,0,0.0,0,0,0,0.0,26,forward,left,1999-06-07,Anchorage,AK,US,25
+113,rookie,Dara Greig,MTL,14,0,1,1,0,6,0,0,0,8,0,0,0,0,0,0,0,0.0,0,0,0,0.0,17,forward,left,2000-12-30,Camden,NJ,US,24
+114,rookie,Lauren Bernard,TOR,15,0,1,1,-2,2,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,19,defense,left,2001-07-15,Madison,OH,US,23
+115,,Lexie Adzija,BOS,17,0,1,1,-7,0,0,1,0,18,0,0,0,0,0,0,0,0.0,0,0,0,0.0,88,forward,left,2000-06-30,St. Thomas,ON,CAN,24
+116,rookie,Klara Hymlarova,MIN,17,0,1,1,-1,2,0,1,0,14,0,0,0,0,0,0,0,0.0,0,0,0,0.0,71,forward,left,1999-02-27,Opava,CZE,CZE,25
+117,,Savannah Harmon,TOR,18,0,1,1,-4,0,0,1,0,27,0,0,0,0,0,0,0,0.0,0,0,0,0.0,15,defense,left,1995-10-27,Downers Grove,IL,US,29
+118,,Allie Munroe,TOR,18,0,1,1,-1,6,0,0,0,11,0,0,0,0,0,0,0,0.0,0,0,0,0.0,12,defense,left,1997-04-20,Yarmouth,NS,CAN,27
+119,,Jessica Adolfsson,OTT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,9,defense,left,1998-07-15,Linköping,SWE,SWE,26
+120,,Catherine Daoust,MTL,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,4,defense,right,1995-02-21,L’Île-Bizard,QC,CAN,29
+121,,Laura Kluge,TOR,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,25,forward,left,1996-11-06,Berlin,GER,GER,28
+122,,Abigail Levy,NY,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,39,goalie,left,2000-04-02,Congers,NY,US,24
+123,rookie,Lucy Morgan,MIN,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,32,goalie,right,2001-08-18,Mandan,ND,US,23
+124,rookie,Kelly Ann Nadeau,MTL,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,51,defense,right,1998-03-30,Mont-Laurier,QC,CAN,26
+125,,Klara Peslarova,BOS,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,29,goalie,left,1996-11-23,Ostrava,CZE,CZE,28
+126,rookie,Charlotte Akervik,MIN,2,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,8,defense,right,2001-02-17,Eau Claire,WI,US,24
+127,,Kelly Babstock,BOS,3,0,0,0,-1,2,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,8,forward,right,1992-08-04,Mississauga,ON,CAN,32
+128,,Taylor Baker,NY,3,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,4,defense,right,1997-07-30,Toronto,ON,CAN,27
+129,,Jillian Dempsey,BOS,3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,14,forward,left,1991-01-19,Winthrop,MA,US,34
+130,,Samantha Isbell,OTT,3,0,0,0,-1,2,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,5,defense,left,1998-02-17,Thunder Bay,ON,CAN,27
+131,rookie,Anneke Rankila,TOR,3,0,0,0,-1,0,0,0,0,1,0,0,0,0,0,0,0,0.0,0,0,0,0.0,13,forward,right,1999-11-10,Lino Lakes,MN,US,25
+132,,Elaine Chuli,MTL,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,20,goalie,left,1994-05-16,Waterford,ON,CAN,30
+133,rookie,Gwyneth Philips,OTT,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,33,goalie,right,2000-09-17,Athens,OH,US,24
+134,,Emma Söderberg,BOS,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,30,goalie,left,1998-02-18,Örksköldsvik,SWE,SWE,26
+135,,Nicole Hensley,MIN,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,29,goalie,left,1994-06-23,Lakewood,CO,US,30
+136,,Taylor House,OTT,6,0,0,0,-2,2,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,22,forward,left,1998-09-29,Joliet,IL,US,26
+137,rookie,Megan Carter,TOR,7,0,0,0,2,4,0,0,0,9,0,0,0,0,0,0,0,0.0,0,0,0,0.0,23,defense,left,2001-05-23,Milton,ON,CAN,23
+138,,Olivia Knowles,NY,8,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,7,defense,right,1999-01-24,Campbell River,BC,CAN,26
+139,,Kayla Vespa,NY,8,0,0,0,-2,0,0,0,0,4,0,0,0,0,0,0,0,0.0,0,0,0,0.0,81,forward,left,1997-04-01,Hamilton,ON,CAN,27
+140,rookie,Raygan Kirk,TOR,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0,0,0.0,1,goalie,left,2001-03-11,Ste. Anne,MB,CAN,23

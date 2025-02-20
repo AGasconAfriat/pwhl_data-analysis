@@ -82,10 +82,12 @@ app.layout = (
     html.Div(children=[
         # Top part: team and position selector,
         html.Div(children=[
-            html.H2("Select team: "),
+            html.H2("Select team(s): "),
             dcc.Checklist(options=team_select_list, value=["BOS", "MIN", "MTL", "NY", "OTT", "TOR"], id="team_select", inline=True),
+            html.Br(style={"line-height": "5"}),
+            dcc.Checklist(options=[{"label":"Forward", "value":"forward"}, {"label":"Defense", "value":"defense"}, {"label":"Goalie", "value":"goalie"}],
+                          value=["forward", "defense", "goalie"], id="position_select", inline=True),
             html.Br(style={"line-height": "5"})
-            #TODO position selector
         ]), # End top part
         # Bottow part: graphs and top players
         html.Div(children=[
@@ -103,7 +105,7 @@ app.layout = (
                Output(component_id='dateL', component_property='children')],
               [Input(component_id='season', component_property='value')])
 def display_season_stats(input_season):
-    current_df = df # TODO select dataframe matching selected settings
+    current_df = df # TODO select dataframe matching selected season
     df_ag_rel = pd.DataFrame(current_df[["assists", "goals"]].value_counts()).reset_index()
     # figL1 assists and goals relationship
     # Create a column for the names of the players (or number of players is greater than 5) matching the data
@@ -121,7 +123,8 @@ def display_season_stats(input_season):
     rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
     rookie_df=rookie_df.replace(team_locs).rename(columns={'points': 'points per rookie'})
     figL3 = px.bar(rookie_df, x="team", y="points per rookie", title="Average number of points per rookie skater", color="color",
-                   color_discrete_sequence=rookie_df["color"])
+                   color_discrete_sequence=rookie_df["color"], hover_data={"color":False})
+    figL3.update_layout(showlegend=False)
     # TODO file date
     return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("Test file date")]
 
@@ -129,10 +132,12 @@ def display_season_stats(input_season):
                Output(component_id='plot2', component_property='children'),
                Output(component_id='plot3', component_property='children')],
                [Input(component_id='season', component_property='value'),
-                Input(component_id='team_select', component_property='value')])
-def display_stats(input_season, input_teams):
+                Input(component_id='team_select', component_property='value'),
+                Input(component_id='position_select', component_property='value')])
+def display_stats(input_season, input_teams, input_pos):
     # create dataframe matching selected settings
     current_df = df.loc[df["team"].isin(input_teams)] #TODO take season into account
+    current_df = current_df.loc[current_df["position"].isin(input_pos)]
     # fig1 age distribution
     min_age=df["age"].min()
     max_age=df["age"].max()

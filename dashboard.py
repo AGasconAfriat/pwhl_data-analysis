@@ -66,7 +66,7 @@ app.layout = (
         html.H1('PWHL Player Statistics', 
             style={'textAlign': 'center', 'color': 'black', 'font-size': 56}),
         html.Div([ # season selection div
-            html.H2('Select Year:', style={'margin-right': '2em'}),
+            html.H2('Select season:', style={'margin-right': '2em'}),
             dcc.Dropdown(["2024-2025"], value = "2024-2025" ,id='season')
         ], id="season_select", style={"width": "28%"}), # end season selection div
     ], style={"margin-bottom":"1.5em"}), # End top div
@@ -92,7 +92,7 @@ app.layout = (
             html.Div(children=[], id="plot1", style={"width": "25%", "display":"inline-block"}),
             html.Div(children=[], id="plot2", style={"width": "25%", "display":"inline-block"}),
             html.Div(children=[], id="plot3", style={"width": "25%", "display":"inline-block"}),
-            html.Div(children=[], id="top_players", style={"width": "25%", "display":"inline-block"}))
+            html.Div(children=[], id="top_players", style={"width": "25%", "display":"inline-block"})
         ], style={"display":"block"}) # End bottom part
     ]) # End main panel div
 )# End layout
@@ -108,7 +108,8 @@ def display_season_stats(input_season):
     # figL1 assists and goals relationship
     # Create a column for the names of the players (or number of players is greater than 5) matching the data
     df_ag_rel["players"] = df_ag_rel.apply(lambda row: get_players(row["assists"], row["goals"], row["count"], current_df), axis=1)
-    figL1 = px.scatter(df_ag_rel, x="assists", y="goals", size="count", title="Relationship between assists and goals", hover_data=["players"])
+    figL1 = px.scatter(df_ag_rel, x="assists", y="goals", size="count", title="Relationship between assists and goals",
+                       hover_data={"players":True, "count":False})
     # figL2 top 10 skaters pie chart
     skaters_only_df = current_df[current_df["position"] != "G"]
     top10 = skaters_only_df.head(10)

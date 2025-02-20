@@ -83,7 +83,7 @@ app.layout = (
         # Top part: team and position selector,
         html.Div(children=[
             html.H2("Select team: "),
-            dcc.RadioItems(team_select_list, "MTL", id="team_select", inline=True),
+            dcc.Checklist(options=team_select_list, value=["BOS", "MIN", "MTL", "NY", "OTT", "TOR"], id="team_select", inline=True),
             html.Br(style={"line-height": "5"})
             #TODO position selector
         ]), # End top part
@@ -130,9 +130,9 @@ def display_season_stats(input_season):
                Output(component_id='plot3', component_property='children')],
                [Input(component_id='season', component_property='value'),
                 Input(component_id='team_select', component_property='value')])
-def display_stats(input_season, input_team):
+def display_stats(input_season, input_teams):
     # create dataframe matching selected settings
-    current_df = df[df["team"]==input_team] #TODO take season into account
+    current_df = df.loc[df["team"].isin(input_teams)] #TODO take season into account
     # fig1 age distribution
     min_age=df["age"].min()
     max_age=df["age"].max()

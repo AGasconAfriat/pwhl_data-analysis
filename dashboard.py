@@ -117,10 +117,12 @@ def display_season_stats(input_season):
     team_df=team_df.replace(team_locs).rename(columns={'counts': 'count'})
     figL2 = px.pie(team_df, values="count", names="team", title="Distribution of top 10 skaters across teams", color_discrete_sequence=team_df["color"])
     # figL3
-    rookie_df = current_df[current_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     
+    rookie_df = skaters_only_df[skaters_only_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     
     rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
     rookie_df=rookie_df.replace(team_locs).rename(columns={'points': 'points per rookie'})
-    figL3 = px.bar(rookie_df, x="team", y="points per rookie", color="color", color_discrete_sequence=rookie_df["color"])
+    figL3 = px.bar(rookie_df, x="team", y="points per rookie", title="Average number of points per rookie skater", color="color",
+                   color_discrete_sequence=rookie_df["color"])
+    # TODO file date
     return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("Test file date")]
 
 @app.callback([Output(component_id='plot1', component_property='children'),
@@ -130,7 +132,7 @@ def display_season_stats(input_season):
                 Input(component_id='team_select', component_property='value')])
 def display_stats(input_season, input_team):
     # create dataframe matching selected settings
-    current_df = df[df["team"]==input_team]
+    current_df = df[df["team"]==input_team] #TODO take season into account
     # fig1 age distribution
     min_age=df["age"].min()
     max_age=df["age"].max()

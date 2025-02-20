@@ -6,6 +6,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 from dash import no_update
 import datetime as dt
+import os
+
+# Indicate which file to take the data from
+file_path='skater_stats.csv'
 
 # Create variables containing information about the teams
 teams = {"BOS": {"name": "Fleet", "location": "Boston", "code": "BOS", "color":"#173f35"},
@@ -58,7 +62,7 @@ app.title = "PWHL Player Statistics"
 app.config.suppress_callback_exceptions = True
 
 # Read the data into pandas dataframe
-df =  pd.read_csv('skater_stats.csv')
+df =  pd.read_csv(file_path)
 
 # Begin layout
 app.layout = (
@@ -70,12 +74,12 @@ app.layout = (
             dcc.Dropdown(["2024-2025"], value = "2024-2025" ,id='season')
         ], id="season_select", style={"width": "28%"}), # end season selection div
     ], style={"margin-bottom":"1.5em"}), # End top div
-    html.Div(children=[ # Left panel div
+    html.Div(children=[ # season panel div
         html.Div(children=[], id="plotL1", style={"width": "33%", "display":"inline-block"}),
         html.Div(children=[], id="plotL2", style={"width": "33%", "display":"inline-block"}),
         html.Div(children=[], id="plotL3", style={"width": "33%", "display":"inline-block"}),
         html.Div(children=[], id="dateL")
-    ]), # End left panel div
+    ]), # End season panel div
     # Main panel div: interactive team dashboard
     html.Div(children=[
         # Top part: team and position selector,
@@ -91,7 +95,8 @@ app.layout = (
         html.Div(children=[
             html.Div(children=[], id="plot1", style={"width": "25%", "display":"inline-block"}),
             html.Div(children=[], id="plot2", style={"width": "25%", "display":"inline-block"}),
-            html.Div(children=[], id="plot3", style={"width": "25%", "display":"inline-block"}),
+            html.Div(children=[], id="plot3", style={"width": "50%", "display":"inline-block"}),
+            html.Br(style={"line-height": "5"}),
             html.Div(children=[], id="top_players", style={"width": "25%", "display":"inline-block"})
         ], style={"display":"block"}) # End bottom part
     ]) # End main panel div
@@ -125,8 +130,11 @@ def display_season_stats(input_season):
     figL3 = px.bar(rookie_df, x="team", y="points per rookie", title="Average number of points per rookie skater", color="color",
                    color_discrete_sequence=rookie_df["color"], hover_data={"color":False})
     figL3.update_layout(showlegend=False)
-    # TODO file date
-    return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("To be added: date information")]
+    # update_date_info date of the last modification to the CSV file
+    timestamp = os.path.getmtime(file_path)
+    last_modified_date = dt.datetime.fromtimestamp(timestamp)
+    update_date_info = f"Dataset last updated on {last_modified_date.strftime('%Y-%m-%d %H:%M')}"
+    return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P(update_date_info)]
 
 @app.callback([Output(component_id='plot1', component_property='children'),
                Output(component_id='plot2', component_property='children'),
@@ -154,7 +162,20 @@ def display_stats(input_season, input_teams, input_pos):
         labels={'team': 'teams', 'points': 'total points'},
         title='Point distribution')
     # fig3 player origin
-    return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), html.P("To be added: player origin map")]
+    home_country_df = current_df["home country"].value_counts().reset_index().rename(columns={"count": "number of players"})
+    fig3 = px.choropleth(home_country_df, locations="home country", color="number of players", color_continuous_scale=px.colors.sequential.Plotly3_r,
+                         title="Home country distribution")
+    fig3.update_layout(
+        geo=dict(
+            showframe=True,
+            showcoastlines=True,
+            projection_type='natural earth',
+            center=dict(lat=43.5, lon=-50),
+            lonaxis_range=[-70, 70],  # Longitude range for zoom
+            lataxis_range=[-35, 35]     # Latitude range for zoom
+        )
+    )
+    return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), dcc.Graph(figure=fig3)]
 
 if __name__ == '__main__':
     app.run_server()

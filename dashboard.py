@@ -62,20 +62,18 @@ df =  pd.read_csv('skater_stats.csv')
 
 # Begin layout
 app.layout = (
-    # Top div: season selection dropdown and dashboard title
-    html.Div(children=[
-        # season selection div
-        html.Div([
+    html.Div(children=[ # Top div: season selection dropdown and dashboard title
+        html.H1('PWHL Player Statistics', 
+            style={'textAlign': 'center', 'color': 'black', 'font-size': 56}),
+        html.Div([ # season selection div
             html.H2('Select Year:', style={'margin-right': '2em'}),
             dcc.Dropdown(["2024-2025"], value = "2024-2025" ,id='season')
-        ], id="season_select"), # end season selection div
-        html.H1('PWHL Player Statistics', 
-            style={'textAlign': 'center', 'color': 'black', 'font-size': 56})
-    ]), # End top div
+        ], id="season_select", style={"width": "28%"}), # end season selection div
+    ], style={"margin-bottom":"1.5em"}), # End top div
     html.Div(children=[ # Left panel div
-        html.Div(children=[], id="plotL1"),
-        html.Div(children=[], id="plotL2"),
-        html.Div(children=[], id="plotL3"),
+        html.Div(children=[], id="plotL1", style={"width": "33%", "display":"inline-block"}),
+        html.Div(children=[], id="plotL2", style={"width": "33%", "display":"inline-block"}),
+        html.Div(children=[], id="plotL3", style={"width": "33%", "display":"inline-block"}),
         html.Div(children=[], id="dateL")
     ]), # End left panel div
     # Main panel div: interactive team dashboard
@@ -91,11 +89,11 @@ app.layout = (
         ]), # End top part
         # Bottow part: graphs and top players
         html.Div(children=[
-            html.Div(children=[], id="plot1"),
-            html.Div(children=[], id="plot2"),
-            html.Div(children=[], id="plot3"),
-            html.Div(children=[], id="top_players")
-        ]) # End bottom part
+            html.Div(children=[], id="plot1", style={"width": "25%", "display":"inline-block"}),
+            html.Div(children=[], id="plot2", style={"width": "25%", "display":"inline-block"}),
+            html.Div(children=[], id="plot3", style={"width": "25%", "display":"inline-block"}),
+            html.Div(children=[], id="top_players", style={"width": "25%", "display":"inline-block"}))
+        ], style={"display":"block"}) # End bottom part
     ]) # End main panel div
 )# End layout
 
@@ -118,7 +116,8 @@ def display_season_stats(input_season):
     team_df["color"] = team_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
     team_df=team_df.replace(team_locs).rename(columns={'counts': 'count'})
     figL2 = px.pie(team_df, values="count", names="team", title="Distribution of top 10 skaters across teams", color_discrete_sequence=team_df["color"])
-    # figL3
+    figL2.update_layout(showlegend=False)
+    # figL3 points per rookie
     rookie_df = skaters_only_df[skaters_only_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     
     rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
     rookie_df=rookie_df.replace(team_locs).rename(columns={'points': 'points per rookie'})

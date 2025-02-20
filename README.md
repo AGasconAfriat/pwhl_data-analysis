@@ -16,7 +16,8 @@ Analysing data from the PWHL
 
 ### Files To Run the Dashboard
 
-* `step1_get_stats.py`: A script to scrape the data and save it into CSV files.
+* `step1_get_stats.py`: A script to scrape the data and save it into a CSV file.
+* `full_stats.csv`: A CSV file generated using `step1_get_stats.py`.
 * `step2_run_dashboard.py`: A script to run the interactive dashboard.
 
 ## Script Dependencies

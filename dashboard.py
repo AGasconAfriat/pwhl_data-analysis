@@ -116,12 +116,18 @@ def display_season_stats(input_season):
     figL1 = px.scatter(df_ag_rel, x="assists", y="goals", size="count", title="Relationship between assists and goals",
                        hover_data={"players":True, "count":False})
     # figL2 top 10 skaters pie chart
+    def get_players_from_team(team, input_df):
+        players_ls = input_df[input_df["team"] == team]["name"].to_list()
+        players_ls = format_list_as_text(players_ls)
+        return players_ls
     skaters_only_df = current_df[current_df["position"] != "G"]
     top10 = skaters_only_df.head(10)
     team_df = top10["team"].value_counts().to_frame('counts').reset_index()
     team_df["color"] = team_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
+    team_df["players"] = team_df.apply(lambda row: get_players_from_team(row["team"], top10), axis=1)
     team_df=team_df.replace(team_locs).rename(columns={'counts': 'count'})
-    figL2 = px.pie(team_df, values="count", names="team", title="Distribution of top 10 skaters across teams", color_discrete_sequence=team_df["color"])
+    figL2 = px.pie(team_df, values="count", names="team", title="Distribution of top 10 skaters across teams", color_discrete_sequence=team_df["color"],
+                   hover_data={"players":True})
     figL2.update_layout(showlegend=False)
     # figL3 points per rookie
     rookie_df = skaters_only_df[skaters_only_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     

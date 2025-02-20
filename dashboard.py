@@ -80,7 +80,7 @@ app.layout = (
     html.Div(children=[
         # Top part: team and position selector,
         html.Div(children=[
-            html.H2("Select team(s): "),
+            html.H2("Select team(s) and position(s): "),
             dcc.Checklist(options=team_select_list, value=["BOS", "MIN", "MTL", "NY", "OTT", "TOR"], id="team_select", inline=True),
             html.Br(style={"line-height": "5"}),
             dcc.Checklist(options=[{"label":"Forward", "value":"forward"}, {"label":"Defense", "value":"defense"}, {"label":"Goalie", "value":"goalie"}],
@@ -126,7 +126,7 @@ def display_season_stats(input_season):
                    color_discrete_sequence=rookie_df["color"], hover_data={"color":False})
     figL3.update_layout(showlegend=False)
     # TODO file date
-    return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("Test file date")]
+    return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("To be added: date information")]
 
 @app.callback([Output(component_id='plot1', component_property='children'),
                Output(component_id='plot2', component_property='children'),
@@ -154,8 +154,7 @@ def display_stats(input_season, input_teams, input_pos):
         labels={'team': 'teams', 'points': 'total points'},
         title='Point distribution')
     # fig3 player origin
-    # return graphs
-    return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), html.P("To add: player origin map")]
+    return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), html.P("To be added: player origin map")]
 
 if __name__ == '__main__':
     app.run_server()

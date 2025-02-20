@@ -104,11 +104,24 @@ app.layout = (
               [Input(component_id='season', component_property='value')])
 def display_season_stats(input_season):
     current_df = df # TODO select dataframe matching selected settings
-    df_ag_rel = pd.DataFrame(df[["assists", "goals"]].value_counts()).reset_index()
+    df_ag_rel = pd.DataFrame(current_df[["assists", "goals"]].value_counts()).reset_index()
+    # figL1 assists and goals relationship
     # Create a column for the names of the players (or number of players is greater than 5) matching the data
     df_ag_rel["players"] = df_ag_rel.apply(lambda row: get_players(row["assists"], row["goals"], row["count"], current_df), axis=1)
     figL1 = px.scatter(df_ag_rel, x="assists", y="goals", size="count", title="Relationship between assists and goals", hover_data=["players"])
-    return [dcc.Graph(figure=figL1), html.P("Test L2"), html.P("Test L3"), html.P("Test file date")]
+    # figL2 top 10 skaters pie chart
+    skaters_only_df = current_df[current_df["position"] != "G"]
+    top10 = skaters_only_df.head(10)
+    team_df = top10["team"].value_counts().to_frame('counts').reset_index()
+    team_df["color"] = team_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
+    team_df=team_df.replace(team_locs).rename(columns={'counts': 'count'})
+    figL2 = px.pie(team_df, values="count", names="team", title="Distribution of top 10 skaters across teams", color_discrete_sequence=team_df["color"])
+    # figL3
+    rookie_df = current_df[current_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     
+    rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
+    rookie_df=rookie_df.replace(team_locs).rename(columns={'points': 'points per rookie'})
+    figL3 = px.bar(rookie_df, x="team", y="points per rookie", color="color", color_discrete_sequence=rookie_df["color"])
+    return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P("Test file date")]
 
 @app.callback([Output(component_id='plot1', component_property='children'),
                Output(component_id='plot2', component_property='children'),

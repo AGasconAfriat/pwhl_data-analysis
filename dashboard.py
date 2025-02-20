@@ -13,6 +13,13 @@ teams = {"BOS": {"name": "Fleet", "location": "Boston", "code": "BOS", "color":"
          "NY": {"name": "Sirens", "location": "New York", "code": "NY", "color":"#00bcb5"},
          "OTT": {"name": "Charge", "location": "Ottawa", "code": "OTT", "color":"#a3142f"},
          "TOR": {"name": "Sceptres", "location": "Toronto", "code": "TOR", "color":"#1869b7"}}
+team_names = {}
+team_locs = {}
+team_full_names = {}
+for team, team_dict in teams.items():
+    team_names[team] = team_dict["name"]
+    team_locs[team] = team_dict["location"]
+    team_full_names[team] = f"{team_dict['location']} {team_dict['name']}"
 
 # Create list of radio items
 team_select_list = []
@@ -79,9 +86,16 @@ def display_stats(input_season, input_team):
              color="age", color_discrete_sequence=px.colors.sequential.Plotly3)
     fig1.update_layout(xaxis_title="age (in years)", yaxis_title="number of players", showlegend=False)
     # fig2 points distribution
+    point_data = df.groupby(['team', 'position'])['points'].sum().reset_index().replace(team_locs)
+    fig2=px.bar(point_data,
+        x='team',
+        y='points',
+        color='position',
+        labels={'team': 'teams', 'points': 'total points'},
+        title='Point Distribution')
     # fig3 player origin
     # return graphs
-    return [dcc.Graph(figure=fig1), html.P("testB"), html.P("testC")]
+    return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), html.P("To add: player origin map")]
 
 if __name__ == '__main__':
     app.run_server()

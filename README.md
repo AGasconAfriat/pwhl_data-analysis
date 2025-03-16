@@ -1,10 +1,10 @@
 # pwhl_data-analysis
 
-## Introduction
-
 ## Project Overview
 
-Analysing data from the PWHL
+This project contains files to scrape PWHL player data, save it in a CSV file and display it in the form of a dashboard.
+
+![The upper part of a dashboard titled PWHL Player Statistics, featuring a season selection dropdown menu and three charts.](visual_samples/currentseason_top.png)
 
 ## Files
 

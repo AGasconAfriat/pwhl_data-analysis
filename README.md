@@ -64,5 +64,5 @@ Example with port 8050:
 ## TODO
 
 Not yet implemented:
-- When a playoff season is selected, only offer checkboxes for the teams that made the playoffs
+- When a playoff season is selected, disable checkboxes for the teams that did not make the playoffs
 - Make the dashboard responsive (display charts above each other instead of next to each other on a smaller screen)

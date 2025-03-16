@@ -139,10 +139,12 @@ def display_season_stats(input_season=5):
     figL2.update_layout(showlegend=False)
     # figL3 points per rookie
     rookie_df = skaters_only_df[skaters_only_df["status"] == "rookie"].groupby("team")["points"].mean().reset_index()     
-    rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1)
+    #rookie_df["color"] = rookie_df.apply(lambda row: teams[row["team"]]["color"], axis=1) TODO figure out color issue
     rookie_df=rookie_df.replace(team_locs).rename(columns={'points': 'points per rookie'})
-    figL3 = px.bar(rookie_df, x="team", y="points per rookie", title="Average number of points per rookie skater", color="color",
-                   color_discrete_sequence=rookie_df["color"], hover_data={"color":False})
+    figL3 = px.bar(rookie_df, x="team", y="points per rookie", title="Average number of points per rookie skater", #color="color", TODO figure out color issue
+                   # color_discrete_sequence=rookie_df["color"], TODO figure out color issue
+                   #hover_data={"color":False} # TODO figure out color issue
+                  )
     figL3.update_layout(showlegend=False)
     # update_date_info date of the last modification to the CSV file
     timestamp = os.path.getmtime(file_path)
@@ -159,7 +161,7 @@ def display_season_stats(input_season=5):
 def display_stats(input_season, input_teams, input_pos):
     # create dataframe matching selected settings
     current_df = df[df["season"] == input_season] # only keep data for the selected season
-    current_df = df.loc[df["team"].isin(input_teams)]
+    current_df = current_df.loc[df["team"].isin(input_teams)]
     current_df = current_df.loc[current_df["position"].isin(input_pos)]
     # fig1 age distribution
     min_age=df["age"].min()

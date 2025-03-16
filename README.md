@@ -37,7 +37,7 @@ pip install httpx==0.20 dash plotly
 
 An easy way to see if you are lacking anything is to try to run the script, then install the appropriate package if you get an error message about missing dependencies.
 
-`step1_get_stats.py` needs a WebDriver to be installed. Consult [the supported browsers section of the Selenium downloads page](https://www.selenium.dev/downloads/#supported-browsers) for more information.
+`step1_get_stats.py` needs a WebDriver to be installed. Consult [the supported browsers section of the Selenium downloads page](https://www.selenium.dev/downloads/#supported-browsers) for more information. If not using Edge, update line 24 of `step1_get_stats.py` with the appropriate WebDriver.
 
 ## Running a Python script
 

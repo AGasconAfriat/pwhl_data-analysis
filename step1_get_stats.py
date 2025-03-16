@@ -49,37 +49,18 @@ def calculate_age(birthdate_str): # age in years, rounded down
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
 def parse_url_code(url_code, index, season=0): #setting season to zero for now, feature to be added later TODO update this comment
-    return url_code.replace("<index">, str(index)).replace("<season>", str(season))
+    return url_code.replace("<index>", str(index)).replace("<season>", str(season))
 def scrape_page_list(url_code, n): # any part of an url meant to be replaced by the index or season should be "<index>" or "<season>"
                                     # n is the number of pages to scrape
-    temp_df = scrape_stats_page(parse_url_code(url_code, 1)
+    temp_df = scrape_stats_page(parse_url_code(url_code, 1))
     for i in range(2, n + 1):
         page_df = scrape_stats_page(parse_url_code(url_code, i))
-        temp_df = pd.concat([temp_df, page df])
+        temp_df = pd.concat([temp_df, page_df])
     return temp_df
 # ----- WEBSCRAPING ----- ----- ----- ----- ----- ----- -----
-#for i in range (1, 8):
-#    page_url = "https://www.thepwhl.com/en/stats/player-stats/all-teams/5?sort=points&playertype=skater&position=skaters&rookie=no&statstype=expanded&page=" + #str(i) + "&league=1"
-#    page_df = scrape_stats_page(page_url)
-#    if ("temp_df" not in globals()):
-#        temp_df = page_df
-#    else:
-#        temp_df = pd.concat([temp_df, page_df])
-#df = temp_df
-#del temp_df
-
 df = scrape_page_list("https://www.thepwhl.com/en/stats/player-stats/all-teams/5?sort=points&playertype=skater&position=skaters&rookie=no&statstype=expanded&page=<index>&league=1", 8)
-
-for i in range (1, 7):
-    page_url = "https://www.thepwhl.com/en/stats/roster/" + str(i) + "/5?league=1"
-    page_df = scrape_stats_page(page_url)
-    if ("temp_df" not in globals()):
-        temp_df = page_df
-    else:
-        temp_df = pd.concat([temp_df, page_df])
-det_df = temp_df
-del temp_df
-print("Webscraping complete.")
+det_df = scrape_page_list("https://www.thepwhl.com/en/stats/roster/<index>/5?league=1", 6)
+print("Webscraping complete.") #TODO remove once done with webscraping tests
 
 # ----- DATA WRANGLING ----- ----- ----- ----- ----- ----- -----
 # statistics dataframe
@@ -121,7 +102,7 @@ skaters_df["home country"] = skaters_df.apply(lambda row: get_country_code(row["
 skaters_df["age"] = skaters_df.apply(lambda row: calculate_age(row["date of birth"]), axis = 1)
 
 # ----- FILE ----- ----- ----- ----- ----- ----- -----
-skaters_df.to_csv("skater_stats_test.csv", index=False)
+skaters_df.to_csv("full_stats.csv", index=False)
 
 # ----- USER MESSAGE ----- ----- ----- ----- ----- ----- -----
 print("Step 1 complete.")

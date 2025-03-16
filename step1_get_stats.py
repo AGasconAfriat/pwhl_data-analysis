@@ -73,7 +73,7 @@ df.columns = ["rank", "status", "photo", "name", "position",
               "plus/minus", "penalty minutes", "power play goals", "power play assists", "short handed goals",
               "shots", "short handed assists", "game winning goals", "first goals", "insurance goals",
               "overtime goals", "unassisted goals", "empty net", "shooting percentage", "shootout goals",
-              "shots in shootouts", "shootout winning goals", "shootout percentage", "nothing"]
+              "shots in shootouts", "shootout winning goals", "shootout percentage", "nothing", "season"]
 df.drop(columns=["photo", "nothing", "position"], inplace=True) #photo and nothing are just blank spaces in the table; the photos are loaded separately
                                                                 #the position is covered by the details dataframe
 df["name"] = df["name"].str.replace(" +", "") # Removing " +" at the end of the names of players who switched teams

@@ -26,6 +26,9 @@ for team, team_dict in teams.items():
     team_locs[team] = team_dict["location"]
     team_full_names[team] = f"{team_dict['location']} {team_dict['name']}"
 
+# Seasons
+seasons = {2: "2024 Preseason", 1: "2024 Regular Season", 3: "2024 Playoffs", 4: "2024-2025 Preseason", 5: "2024-2025 Regular Season"}
+
 # Create function to format lists of strings as text (ex. ["a", "b", "c"] becomes "a, b and c")
 def format_list_as_text(list):
     if len(list) == 0:
@@ -47,10 +50,15 @@ def get_players(assists, goals, count, input_df):
         players_ls = format_list_as_text(players_ls)
     return players_ls
 
+# Create list of dropdown menu items
+season_select_list = []
+for num, name in seasons.items():
+    season_select_list.append({"label": name, "value": num})
+
 # Create list of radio items
 team_select_list = []
 for team, details in teams.items():
-    team_select_list.append({"label": details["location"], "value":team})
+    team_select_list.append({"label": details["location"], "value": team})
 
 # Create app
 app = dash.Dash(__name__)
@@ -71,7 +79,7 @@ app.layout = (
             style={'textAlign': 'center', 'color': 'black', 'font-size': 56}),
         html.Div([ # season selection div
             html.H2('Select season:', style={'margin-right': '2em'}),
-            dcc.Dropdown(["2024-2025"], value = "2024-2025" ,id='season')
+            dcc.Dropdown(options=season_select_list, value = 5, id='season')
         ], id="season_select", style={"width": "28%"}), # end season selection div
     ], style={"margin-bottom":"1.5em"}), # End top div
     html.Div(children=[ # season panel div
@@ -107,8 +115,8 @@ app.layout = (
                Output(component_id='plotL3', component_property='children'),
                Output(component_id='dateL', component_property='children')],
               [Input(component_id='season', component_property='value')])
-def display_season_stats(input_season):
-    current_df = df # TODO select dataframe matching selected season
+def display_season_stats(input_season=5):
+    current_df = df[df["season"] == input_season] # only keep data for the selected season
     df_ag_rel = pd.DataFrame(current_df[["assists", "goals"]].value_counts()).reset_index()
     # figL1 assists and goals relationship
     # Create a column for the names of the players (or number of players is greater than 5) matching the data
@@ -139,7 +147,7 @@ def display_season_stats(input_season):
     # update_date_info date of the last modification to the CSV file
     timestamp = os.path.getmtime(file_path)
     last_modified_date = dt.datetime.fromtimestamp(timestamp)
-    update_date_info = f"Dataset last updated on {last_modified_date.strftime('%Y-%m-%d %H:%M')}"
+    update_date_info = f"Dataset last updated {last_modified_date.strftime('%Y-%m-%d %H:%M')}"
     return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P(update_date_info)]
 
 @app.callback([Output(component_id='plot1', component_property='children'),
@@ -150,7 +158,8 @@ def display_season_stats(input_season):
                 Input(component_id='position_select', component_property='value')])
 def display_stats(input_season, input_teams, input_pos):
     # create dataframe matching selected settings
-    current_df = df.loc[df["team"].isin(input_teams)] #TODO take season into account
+    current_df = df[df["season"] == input_season] # only keep data for the selected season
+    current_df = df.loc[df["team"].isin(input_teams)]
     current_df = current_df.loc[current_df["position"].isin(input_pos)]
     # fig1 age distribution
     min_age=df["age"].min()

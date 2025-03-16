@@ -21,7 +21,7 @@ number_of_seasons = 5
 # ----- FUNCTIONS ----- ----- ----- ----- ----- ----- -----
 def scrape_stats_page(url):
     # set up the WebDriver
-    driver = webdriver.Edge() #EDIT THIS LINE if not using Edge
+    driver = webdriver.Edge() #EDIT THIS LINE if not using Edge <<<<<<<<<<<<<<<<<<<< IMPORTANT <<<<<<<<<<<<<<<<<<<<
     # open the webpage
     driver.get(url)
     # wait for the table to load
@@ -64,7 +64,6 @@ def scrape_page_list(url_code, n, n_seasons=1): # any part of an url meant to be
 # ----- WEBSCRAPING ----- ----- ----- ----- ----- ----- -----
 df = scrape_page_list("https://www.thepwhl.com/en/stats/player-stats/all-teams/5?sort=points&playertype=skater&position=skaters&rookie=no&statstype=expanded&page=<index>&league=1", 8, number_of_seasons)
 det_df = scrape_page_list("https://www.thepwhl.com/en/stats/roster/<index>/5?league=1", 6) # details pages only list the current members of each team
-print("Webscraping complete.") #TODO remove once done with webscraping tests
 
 # ----- DATA WRANGLING ----- ----- ----- ----- ----- ----- -----
 # statistics dataframe
@@ -85,7 +84,7 @@ det_df.dropna(inplace = True) #removing blank lines
 # merged dataframe
 skaters_df = df.merge(det_df, on="name", how="left")
 # Drop rows that are fully blank (ignoring if the season has a value)
-skaters_df = df.dropna(subset=[col for col in skaters_df.columns if col != "season"])
+skaters_df = skaters_df.dropna(subset=[col for col in skaters_df.columns if col != "season"])
 skaters_df[['hometown','hometown location']] = skaters_df["hometown"].str.split(", ", expand=True)
 # making text values clearer
 pd.options.mode.copy_on_write = True

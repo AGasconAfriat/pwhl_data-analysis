@@ -86,6 +86,9 @@ skaters_df = df.merge(det_df, on="name", how="left")
 # Drop rows that are fully blank (ignoring if the season has a value)
 skaters_df = skaters_df.dropna(subset=[col for col in skaters_df.columns if col != "season"])
 skaters_df[['hometown','hometown location']] = skaters_df["hometown"].str.split(", ", expand=True)
+# In the 2024 preseason stats, the MTL (Montreal) team was referred to as MON instead
+is_mon = (skaters_df["team"] == "MON")
+skaters_df.loc[is_mon, "team"] = "MTL"
 # making text values clearer
 pd.options.mode.copy_on_write = True
 is_rookie = (skaters_df["status"] == "*")

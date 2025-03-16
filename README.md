@@ -49,7 +49,11 @@ python <path>/<filename>
 
 ## Running the Scripts and Accessing the Dashboard
 
-First, run `step1_get_stats.py`. WebDriver will open and close multiple webpages displaying PWHL player statistics. Wait for the script to end. It is normal for it to take a while as it needs to open a large number of webpages (46 at time of writing), waiting for each to load the table, then scraping the data. It will output "Step 1 complete." when it ends.
+First, run `step1_get_stats.py`. WebDriver will open and close multiple webpages displaying PWHL player statistics. Wait for the script to end. It will output "Step 1 complete."
+
+**NOTE 1**: It is normal for the script to take a while as it needs to open a large number of webpages (46 at time of writing), waiting for each to load the table, then scraping the data.
+
+**NOTE 2**: You may see a list of WebDriver-related warnings and errors in the console. They should not prevent the script from completing.
 
 Then, run `step2_run_dashboard.py`. Its output should specify which port it is running on.
 

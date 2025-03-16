@@ -150,6 +150,19 @@ def display_season_stats(input_season=5):
     update_date_info = f"Dataset last updated {last_modified_date.strftime('%Y-%m-%d %H:%M')}"
     return [dcc.Graph(figure=figL1), dcc.Graph(figure=figL2), dcc.Graph(figure=figL3), html.P(update_date_info)]
 
+@app.callback([Output(component_id="team_select", component_property="options"),
+               Output(component_id="team_select", component_property="value")],
+              [Input(component_id="season", component_property="value")])
+def update_team_select(input_season): # only keeps the boxes for the teams that were part of the season
+    season_team_list = df[df["season"] == input_season]["team"].unique()
+    new_team_select_list = []
+    new_selected_list = []
+    for team, details in teams.items():
+        if team in season_team_list:
+            new_team_select_list.append({"label": details["location"], "value": team})
+            new_selected_list.append(team)
+    return [new_team_select_list, new_selected_list]
+
 @app.callback([Output(component_id='plot1', component_property='children'),
                Output(component_id='plot2', component_property='children'),
                Output(component_id='plot3', component_property='children')],

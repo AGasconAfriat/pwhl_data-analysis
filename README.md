@@ -14,6 +14,10 @@ Analysing data from the PWHL
 * `skater_stats.csv`: A sample CSV file containing PWHL skater statistics.
 * `visualizations.ipynb`: A notebook showing how to create different types of visualizations based on skater statistics.
 
+### Files Showing the Dashboard
+
+The `visual_samples` folder contains screen captures of the dashboard.
+
 ### Files To Run the Dashboard
 
 * `step1_get_stats.py`: A script to scrape the data and save it into a CSV file.
@@ -37,7 +41,7 @@ pip install httpx==0.20 dash plotly
 
 An easy way to see if you are lacking anything is to try to run the script, then install the appropriate package if you get an error message about missing dependencies.
 
-`step1_get_stats.py` needs a WebDriver to be installed. Consult [the supported browsers section of the Selenium downloads page](https://www.selenium.dev/downloads/#supported-browsers) for more information.
+`step1_get_stats.py` needs a WebDriver to be installed. Consult [the supported browsers section of the Selenium downloads page](https://www.selenium.dev/downloads/#supported-browsers) for more information. If not using Edge, update line 24 of `step1_get_stats.py` with the appropriate WebDriver.
 
 ## Running a Python script
 
@@ -51,6 +55,10 @@ python <path>/<filename>
 
 First, run `step1_get_stats.py`. WebDriver will open and close multiple webpages displaying PWHL player statistics. Wait for the script to end. It will output "Step 1 complete."
 
+**NOTE 1**: It is normal for the script to take a while as it needs to open a large number of webpages (46 at time of writing), waiting for each to load the table, then scraping the data.
+
+**NOTE 2**: You may see a list of WebDriver-related warnings and errors in the console. They should not prevent the script from completing.
+
 Then, run `step2_run_dashboard.py`. Its output should specify which port it is running on.
 
 Example with port 8050:
@@ -60,3 +68,8 @@ Example with port 8050:
  * Debug mode: off
  * Running on http://127.0.0.1:8050
 ```
+
+## TODO
+
+Not yet implemented:
+- Make the dashboard responsive (display charts above each other instead of next to each other on a smaller screen)

@@ -39,20 +39,24 @@ An easy way to see if you are lacking anything is to try to run the script, then
 
 `step1_get_stats.py` needs a WebDriver to be installed. Consult [the supported browsers section of the Selenium downloads page](https://www.selenium.dev/downloads/#supported-browsers) for more information.
 
-## Running the Scripts and Accessing the Dashboard
-
-First, run `step1_get_stats.py` and wait for it to end. Then, run `set2_run_dashboard.py`. Its output should specify which port it is running on.
-
-Example with port 8050:
-
-```
- * Serving Flask app 'dashboard'
- * Debug mode: off
- * Running on http://127.0.0.1:8050
-```
+## Running a Python script
 
 To run a script, use the following command:
 
 ```
 python <path>/<filename>
+```
+
+## Running the Scripts and Accessing the Dashboard
+
+First, run `step1_get_stats.py`. WebDriver will open and close multiple webpages displaying stats 
+
+Then, run `set2_run_dashboard.py`. Its output should specify which port it is running on.
+
+Example with port 8050:
+
+```
+ * Serving Flask app 'step2_run_dashboard'
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050
 ```

@@ -57,7 +57,7 @@ def scrape_page_list(url_code, n, n_seasons=1): # any part of an url meant to be
     for s in range(1, n_seasons + 1):
         for i in range(1, n + 1):
             page_df = scrape_stats_page(parse_url_code(url_code, i, s))
-            if n_seasons !=0:
+            if n_seasons !=1:
                 page_df["season"] = s
             temp_df = pd.concat([temp_df, page_df])
     return temp_df
@@ -77,13 +77,15 @@ df.columns = ["rank", "status", "photo", "name", "position",
 df.drop(columns=["photo", "nothing", "position"], inplace=True) #photo and nothing are just blank spaces in the table; the photos are loaded separately
                                                                 #the position is covered by the details dataframe
 df["name"] = df["name"].str.replace(" +", "") # Removing " +" at the end of the names of players who switched teams
-df.dropna(inplace = True) #removing blank lines
+
 # details dataframe
 det_df.columns = ["jersey number", "name", "position", "shoots", "date of birth", "hometown", "nothing"]
 det_df.drop(columns=["nothing"], inplace=True) #this one is just blank space in the table
 det_df.dropna(inplace = True) #removing blank lines
 # merged dataframe
 skaters_df = df.merge(det_df, on="name", how="left")
+# Drop rows that are fully blank (ignoring if the season has a value)
+skaters_df = df.dropna(subset=[col for col in skaters_df.columns if col != "season"])
 skaters_df[['hometown','hometown location']] = skaters_df["hometown"].str.split(", ", expand=True)
 # making text values clearer
 pd.options.mode.copy_on_write = True
@@ -105,7 +107,6 @@ skaters_df.loc[right, "shoots"] = "right"
 skaters_df["home country"] = skaters_df.apply(lambda row: get_country_code(row["hometown location"]), axis = 1)
 # create a row for the age in years
 skaters_df["age"] = skaters_df.apply(lambda row: calculate_age(row["date of birth"]), axis = 1)
-
 # ----- FILE ----- ----- ----- ----- ----- ----- -----
 skaters_df.to_csv("full_stats.csv", index=False)
 

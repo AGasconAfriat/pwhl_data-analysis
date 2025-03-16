@@ -17,6 +17,7 @@ usa_locs = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL",
             "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI",
             "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI",
             "WY"]
+number_of_seasons = 5
 # ----- FUNCTIONS ----- ----- ----- ----- ----- ----- -----
 def scrape_stats_page(url):
     # set up the WebDriver
@@ -48,18 +49,21 @@ def calculate_age(birthdate_str): # age in years, rounded down
     today = pd.to_datetime('today')
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
-def parse_url_code(url_code, index, season=0): #setting season to zero for now, feature to be added later TODO update this comment
+def parse_url_code(url_code, index, season=0):
     return url_code.replace("<index>", str(index)).replace("<season>", str(season))
-def scrape_page_list(url_code, n): # any part of an url meant to be replaced by the index or season should be "<index>" or "<season>"
-                                    # n is the number of pages to scrape
-    temp_df = scrape_stats_page(parse_url_code(url_code, 1))
-    for i in range(2, n + 1):
-        page_df = scrape_stats_page(parse_url_code(url_code, i))
-        temp_df = pd.concat([temp_df, page_df])
+def scrape_page_list(url_code, n, n_seasons=0): # any part of an url meant to be replaced by the index or season should be "<index>" or "<season>"
+                                                # n is the number of pages to scrape
+    temp_df = pd.DataFrame()
+    for s in range(1, n_seasons + 1):
+        for i in range(1, n + 1):
+            page_df = scrape_stats_page(parse_url_code(url_code, i, s))
+            if n_seasons !=0:
+                page_df["season"] = s
+            temp_df = pd.concat([temp_df, page_df])
     return temp_df
 # ----- WEBSCRAPING ----- ----- ----- ----- ----- ----- -----
-df = scrape_page_list("https://www.thepwhl.com/en/stats/player-stats/all-teams/5?sort=points&playertype=skater&position=skaters&rookie=no&statstype=expanded&page=<index>&league=1", 8)
-det_df = scrape_page_list("https://www.thepwhl.com/en/stats/roster/<index>/5?league=1", 6)
+df = scrape_page_list("https://www.thepwhl.com/en/stats/player-stats/all-teams/5?sort=points&playertype=skater&position=skaters&rookie=no&statstype=expanded&page=<index>&league=1", 8, number_of_seasons)
+det_df = scrape_page_list("https://www.thepwhl.com/en/stats/roster/<index>/5?league=1", 6, 1) # details pages only list the current members of each team
 print("Webscraping complete.") #TODO remove once done with webscraping tests
 
 # ----- DATA WRANGLING ----- ----- ----- ----- ----- ----- -----
@@ -78,7 +82,8 @@ df.dropna(inplace = True) #removing blank lines
 det_df.columns = ["jersey number", "name", "position", "shoots", "date of birth", "hometown", "nothing"]
 det_df.drop(columns=["nothing"], inplace=True) #this one is just blank space in the table
 det_df.dropna(inplace = True) #removing blank lines
-skaters_df = df.merge(det_df, on="name")
+# merged dataframe
+skaters_df = df.merge(det_df, on="name", how="left")
 skaters_df[['hometown','hometown location']] = skaters_df["hometown"].str.split(", ", expand=True)
 # making text values clearer
 pd.options.mode.copy_on_write = True

@@ -1,5 +1,4 @@
 # ----- SETUP ----- ----- ----- ----- ----- ----- -----
-#import requests TODO remove here and in notebook if this works
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -109,7 +108,9 @@ skaters_df.loc[right, "shoots"] = "right"
 skaters_df["home country"] = skaters_df.apply(lambda row: get_country_code(row["hometown location"]), axis = 1)
 # create a row for the age in years
 skaters_df["age"] = skaters_df.apply(lambda row: calculate_age(row["date of birth"]), axis = 1)
+
 # ----- FILE ----- ----- ----- ----- ----- ----- -----
 skaters_df.to_csv("skater_stats.csv", index=False)
+
 # ----- USER MESSAGE ----- ----- ----- ----- ----- ----- -----
 print("Step 1 complete.")

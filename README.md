@@ -14,6 +14,10 @@ Analysing data from the PWHL
 * `skater_stats.csv`: A sample CSV file containing PWHL skater statistics.
 * `visualizations.ipynb`: A notebook showing how to create different types of visualizations based on skater statistics.
 
+### Files Showing the Dashboard
+
+The `visual_samples` folder contains screen captures of the dashboard.
+
 ### Files To Run the Dashboard
 
 * `step1_get_stats.py`: A script to scrape the data and save it into a CSV file.

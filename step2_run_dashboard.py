@@ -9,7 +9,7 @@ import datetime as dt
 import os
 
 # Indicate which file to take the data from
-file_path='skater_stats.csv'
+file_path='skater_stats_test.csv'
 
 # Create variables containing information about the teams
 teams = {"BOS": {"name": "Fleet", "location": "Boston", "code": "BOS", "color":"#173f35"},

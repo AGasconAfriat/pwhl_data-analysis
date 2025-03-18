@@ -206,4 +206,4 @@ def display_stats(input_season, input_teams, input_pos):
     return [dcc.Graph(figure=fig1), dcc.Graph(figure=fig2), dcc.Graph(figure=fig3)]
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run()

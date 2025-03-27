@@ -1,6 +1,7 @@
 import pandas as pd
 import dash
 from dash import html, dcc
+import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
@@ -61,7 +62,9 @@ for team, details in teams.items():
     team_select_list.append({"label": details["location"], "value": team})
 
 # Create app
-app = dash.Dash(__name__)
+app = dash.Dash(
+    external_stylesheets=[dbc.themes.BOOTSTRAP]
+)
 
 # Set the title of the dashboard
 app.title = "PWHL Player Statistics"
@@ -100,13 +103,17 @@ app.layout = (
             html.Br(style={"line-height": "5"})
         ]), # End top part
         # Bottow part: graphs and top players
+        
+        
         html.Div(children=[
-            html.Div(children=[], id="plot1", style={"width": "25%", "display":"inline-block"}),
-            html.Div(children=[], id="plot2", style={"width": "25%", "display":"inline-block"}),
-            html.Div(children=[], id="plot3", style={"width": "50%", "display":"inline-block"}),
-            html.Br(style={"line-height": "5"}),
-            html.Div(children=[], id="top_players", style={"width": "25%", "display":"inline-block"})
-        ], style={"display":"block"}) # End bottom part
+            dbc.Row([
+            dbc.Col(html.Div(children=[], id="plot1"), md=3),
+            dbc.Col(html.Div(children=[], id="plot2"), md=3),
+            dbc.Col(html.Div(children=[], id="plot3"), md=6),
+        ])
+        ]) # End bottom part
+
+        
     ]) # End main panel div
 )# End layout
 

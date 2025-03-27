@@ -86,9 +86,11 @@ app.layout = (
         ], id="season_select", style={"width": "28%"}), # end season selection div
     ], style={"margin-bottom":"1.5em"}), # End top div
     html.Div(children=[ # season panel div
-        html.Div(children=[], id="plotL1", style={"width": "33%", "display":"inline-block"}),
-        html.Div(children=[], id="plotL2", style={"width": "33%", "display":"inline-block"}),
-        html.Div(children=[], id="plotL3", style={"width": "33%", "display":"inline-block"}),
+        dbc.Row([
+            dbc.Col(html.Div(children=[], id="plotL1"), md=4),
+            dbc.Col(html.Div(children=[], id="plotL2"), md=4),
+            dbc.Col(html.Div(children=[], id="plotL3"), md=4)
+        ]), # End Row
         html.Div(children=[], id="dateL")
     ]), # End season panel div
     # Main panel div: interactive team dashboard
@@ -99,21 +101,16 @@ app.layout = (
             dcc.Checklist(options=team_select_list, value=["BOS", "MIN", "MTL", "NY", "OTT", "TOR"], id="team_select", inline=True),
             html.Br(style={"line-height": "5"}),
             dcc.Checklist(options=[{"label":"Forward", "value":"forward"}, {"label":"Defense", "value":"defense"}, {"label":"Goalie", "value":"goalie"}],
-                          value=["forward", "defense", "goalie"], id="position_select", inline=True),
-            html.Br(style={"line-height": "5"})
+                          value=["forward", "defense", "goalie"], id="position_select", inline=True)
         ]), # End top part
         # Bottow part: graphs and top players
-        
-        
         html.Div(children=[
             dbc.Row([
-            dbc.Col(html.Div(children=[], id="plot1"), md=3),
-            dbc.Col(html.Div(children=[], id="plot2"), md=3),
-            dbc.Col(html.Div(children=[], id="plot3"), md=6),
-        ])
+                dbc.Col(html.Div(children=[], id="plot1"), md=3),
+                dbc.Col(html.Div(children=[], id="plot2"), md=3),
+                dbc.Col(html.Div(children=[], id="plot3"), md=6),
+            ]) # End Row
         ]) # End bottom part
-
-        
     ]) # End main panel div
 )# End layout
 

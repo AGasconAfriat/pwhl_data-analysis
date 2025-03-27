@@ -71,7 +71,6 @@ Example with port 8050:
  * Running on http://127.0.0.1:8050
 ```
 
-## TODO
+## References
 
-Not yet implemented:
-- Make the dashboard responsive (display charts above each other instead of next to each other on a smaller screen)
+- [Layout - dbc docs](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/layout/): How to create an app layout with Dash and Bootstrap.

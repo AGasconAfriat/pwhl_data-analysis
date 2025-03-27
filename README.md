@@ -37,6 +37,8 @@ python -m pip install packaging
 python -m pip install pandas dash
 python -m pip install selenium
 pip install httpx==0.20 dash plotly
+pip install dash_bootstrap_components
+pip install dash_bootstrap_templates
 ```
 
 An easy way to see if you are lacking anything is to try to run the script, then install the appropriate package if you get an error message about missing dependencies.

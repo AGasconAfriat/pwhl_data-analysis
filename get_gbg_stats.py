@@ -90,15 +90,17 @@ def get_player_gbg(num):
     df = get_season_stats(url, seasons_played).dropna()
     df["name"] = name
     df["position"] = position
-    #if position == "G":
-    #    df.columns = goalie_cols
-    #else:
-    #    df.columns = SKATER_COLS
-    #del df["nothing"]
+    if position == "G":
+        df.columns = GOALIE_COLS
+    else:
+        df.columns = SKATER_COLS
+        del df["nothing"]
     return df
 
 #df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
-df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
+df = get_player_gbg(196) # currently gets stats for Montreal Victoire defense player Cayla Barnes
+#df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
 
 #df.to_csv("emily_clark_test.csv", index=False)
-df.to_csv("kristen_campbell_test.csv", index=False)
+df.to_csv("cayla_barnes_test.csv", index=False)
+#df.to_csv("kristen_campbell_test.csv", index=False)

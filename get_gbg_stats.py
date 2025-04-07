@@ -5,6 +5,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 
+GOALIE_COLS = []
+
+SKATER_COLS = ["game", "date", "goals", "assists", "points",
+              "plus-minus", "shots", "penalty minutes", "faceoffs", "faceoffs win percentage",
+              "power play goals", "short handed goals", "game winning goals", "shootoutgoals", "shootout attempts",
+              "time on the ice", "hits", "nothing", "season", "name",
+              "position"]
+
 def scrape_stats_page_gbg(url):
     # set up the WebDriver
     driver = webdriver.Edge() #EDIT THIS LINE if not using Edge <<<<<<<<<<<<<<<<<<<< IMPORTANT <<<<<<<<<<<<<<<<<<<<
@@ -79,17 +87,15 @@ def get_player_gbg(num):
     df = get_season_stats(url, seasons_played).dropna()
     df["name"] = name
     df["position"] = position
+    #if position == "G":
+    #    df.columns = goalie_cols
+    #else:
+    #    df.columns = SKATER_COLS
+    #del df["nothing"]
     return df
 
-df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
+#df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
+df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
 
-#df.to_csv("pre_cols_emily_clark_test.csv")
-
-df.columns = ["game", "date", "goals", "assists", "points",
-              "plus-minus", "shots", "penalty minutes", "faceoffs", "faceoffs win percentage",
-              "power play goals", "short handed goals", "game winning goals", "shootoutgoals", "shootout attempts",
-              "time on the ice", "hits", "nothing", "season", "name",
-              "position"]
-del df["nothing"]
-
-df.to_csv("emily_clark_test.csv")
+#df.to_csv("emily_clark_test.csv")
+df.to_csv("kristen_campbell_test.csv")

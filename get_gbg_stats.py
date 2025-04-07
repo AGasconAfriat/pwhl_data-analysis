@@ -95,19 +95,17 @@ def get_player_gbg(num):
     else:
         df.columns = SKATER_COLS
         del df["nothing"]
-    return df
+    return df, position
 
-df = pd.DataFrame()
-for i in range(50, 52): # nums 50 and 51 are both defense players
-    df_to_add = get_player_gbg(i)
-    df = pd.concat([df, df_to_add])
-df.to_csv("comparison_test.csv", index=False)    
-    
+df_skater = pd.DataFrame()
+df_goalie = pd.DataFrame()
+# TODO test 49 goalie with blank seasons
+for i in range(50, 60): # 5 forwards, 4 defense, 1 goalie
+    df_to_add, pos = get_player_gbg(i)
+    if pos == "G":
+        df_goalie = pd.concat([df_goalie, df_to_add])
+    else:
+        df_skater = pd.concat([df_skater, df_to_add])
+df_skater.to_csv("skater_test.csv", index=False)
+df_goalie.to_csv("skater_test.csv", index=False)
 
-#df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
-#df = get_player_gbg(196) # currently gets stats for Montreal Victoire defense player Cayla Barnes
-#df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
-
-#df.to_csv("emily_clark_test.csv", index=False)
-#df.to_csv("cayla_barnes_test.csv", index=False)
-#df.to_csv("kristen_campbell_test.csv", index=False)

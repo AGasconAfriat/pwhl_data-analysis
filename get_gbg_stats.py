@@ -97,10 +97,16 @@ def get_player_gbg(num):
         del df["nothing"]
     return df
 
+df = pd.DataFrame()
+for i in range(50, 52): # nums 50 and 51 are both defense players
+    pd.concat([df, get_player_gbg(i)])
+df.to_csv("comparison_test.csv", index=False)    
+    
+
 #df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
-df = get_player_gbg(196) # currently gets stats for Montreal Victoire defense player Cayla Barnes
+#df = get_player_gbg(196) # currently gets stats for Montreal Victoire defense player Cayla Barnes
 #df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
 
 #df.to_csv("emily_clark_test.csv", index=False)
-df.to_csv("cayla_barnes_test.csv", index=False)
+#df.to_csv("cayla_barnes_test.csv", index=False)
 #df.to_csv("kristen_campbell_test.csv", index=False)

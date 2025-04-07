@@ -65,7 +65,11 @@ def get_season_stats(player_url, seasons):
     for s in seasons:
         season_df = scrape_stats_page_gbg(player_url + str(s))
         season_df["season"] = s
-        temp_df = pd.concat([temp_df, season_df])
+        if len(season_df) > 0:
+            # ensure the webpage isn’t displaying current season statistics despite saying they are from an earlier season
+            date_to_check = season_df.at[0, 1] # first row, second column (second column contains date)
+            if not date_to_check in temp_df[1].values:
+                temp_df = pd.concat([temp_df, season_df])
     return temp_df
 
 def get_player_gbg(num):

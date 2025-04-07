@@ -81,6 +81,8 @@ df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily C
 df.columns = ["game", "date", "goals", "assists", "points",
               "plus-minus", "shots", "penalty minutes", "faceoffs", "faceoffs win percentage",
               "power play goals", "short handed goals", "game winning goals", "shootoutgoals", "shootout attempts",
-              "time on the ice", "hits", "season", "name", "position"]
+              "time on the ice", "hits", "nothing", "season", "name",
+              "position"]
+del df["nothing"]
 
 df.to_csv("emily_clark_test.csv")

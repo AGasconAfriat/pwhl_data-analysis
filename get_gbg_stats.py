@@ -99,7 +99,8 @@ def get_player_gbg(num):
 
 df = pd.DataFrame()
 for i in range(50, 52): # nums 50 and 51 are both defense players
-    pd.concat([df, get_player_gbg(i)])
+    df_to_add = get_player_gbg(i)
+    df = pd.concat([df, df_to_add])
 df.to_csv("comparison_test.csv", index=False)    
     
 

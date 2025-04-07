@@ -5,7 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 
-GOALIE_COLS = []
+GOALIE_COLS = ["game", "date", "time on the ice", "shots against", "goals against",
+              "saves", "wins", "losses (regular time)", "losses (OT)", "losses (SO)",
+              "goals against average", "save percentage", "shutouts", "goals", "assists",
+              "penalty minutes"]
 
 SKATER_COLS = ["game", "date", "goals", "assists", "points",
               "plus-minus", "shots", "penalty minutes", "faceoffs", "faceoffs win percentage",
@@ -97,5 +100,5 @@ def get_player_gbg(num):
 #df = get_player_gbg(53) # currently gets stats for Ottawa Charge forward Emily Clark
 df = get_player_gbg(64) # currently gets stats for Toronto Sceptres goalie Kristen Campbell
 
-#df.to_csv("emily_clark_test.csv")
-df.to_csv("kristen_campbell_test.csv")
+#df.to_csv("emily_clark_test.csv", index=False)
+df.to_csv("kristen_campbell_test.csv", index=False)

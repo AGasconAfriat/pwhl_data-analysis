@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import Select
 GOALIE_COLS = ["game", "date", "time on the ice", "shots against", "goals against",
               "saves", "wins", "losses (regular time)", "losses (OT)", "losses (SO)",
               "goals against average", "save percentage", "shutouts", "goals", "assists",
-              "penalty minutes"]
+              "penalty minutes", "season", "name", "position"]
 
 SKATER_COLS = ["game", "date", "goals", "assists", "points",
               "plus-minus", "shots", "penalty minutes", "faceoffs", "faceoffs win percentage",
@@ -107,5 +107,5 @@ for i in range(50, 60): # 5 forwards, 4 defense, 1 goalie
     else:
         df_skater = pd.concat([df_skater, df_to_add])
 df_skater.to_csv("skater_test.csv", index=False)
-df_goalie.to_csv("skater_test.csv", index=False)
+df_goalie.to_csv("goalie_test.csv", index=False)
 

@@ -1,0 +1,167 @@
+,visiting team,home team,venue,date,game start,attendance,seating capacity,weekday
+0,New York,Toronto,Mattamy Athletic Centre,"Jan 1, 2024",12:48 PM EST,2537,2600,Monday
+1,Montreal,Ottawa,TD Place,"Jan 2, 2024",7:12 PM EST,8318,9862,Tuesday
+2,Minnesota,Boston,Tsongas Center,"Jan 3, 2024",7:14 PM EST,4012,6500,Wednesday
+3,Toronto,New York,Total Mortgage Arena,"Jan 5, 2024",7:15 PM EST,2152,8412,Friday
+4,Montreal,Minnesota,Xcel Energy Center,"Jan 6, 2024",2:42 PM CST,13316,18300,Saturday
+5,Montreal,New York,UBS Arena,"Jan 10, 2024",7:11 PM EST,2201,17225,Wednesday
+6,Toronto,Minnesota,Xcel Energy Center,"Jan 10, 2024",7:08 PM CST,4707,18300,Wednesday
+7,Ottawa,Toronto,Mattamy Athletic Centre,"Jan 13, 2024",1:09 PM EST,2417,2600,Saturday
+8,Boston,Montreal,Verdun Auditorium,"Jan 13, 2024",3:48 PM EST,3245,4043,Saturday
+9,New York,Minnesota,Xcel Energy Center,"Jan 14, 2024",3:08 PM CST,7951,18300,Sunday
+10,New York,Montreal,Place Bell,"Jan 16, 2024",7:09 PM EST,6334,10062,Tuesday
+11,Boston,Toronto,Mattamy Athletic Centre,"Jan 17, 2024",7:08 PM EST,2491,2600,Wednesday
+12,Minnesota,Ottawa,TD Place,"Jan 17, 2024",7:09 PM EST,5609,9862,Wednesday
+13,New York,Boston,Tsongas Center,"Jan 20, 2024",12:39 PM EST,4007,6500,Saturday
+14,Toronto,Montreal,Verdun Auditorium,"Jan 20, 2024",8:08 PM EST,3232,4043,Saturday
+15,Toronto,Ottawa,TD Place,"Jan 23, 2024",7:08 PM EST,6316,9862,Tuesday
+16,Boston,Ottawa,TD Place,"Jan 24, 2024",7:09 PM EST,5208,9862,Wednesday
+17,Montreal,Minnesota,Xcel Energy Center,"Jan 24, 2024",7:08 PM CST,5001,18300,Wednesday
+18,New York,Toronto,Mattamy Athletic Centre,"Jan 26, 2024",7:08 PM EST,2506,2600,Friday
+19,Ottawa,Montreal,Place Bell,"Jan 27, 2024",3:38 PM EST,8646,10062,Saturday
+20,Minnesota,Boston,Tsongas Center,"Jan 27, 2024",4:09 PM EST,4059,6500,Saturday
+21,Minnesota,New York,Total Mortgage Arena,"Jan 28, 2024",1:08 PM EST,2393,8412,Sunday
+22,Minnesota,Toronto,Mattamy Athletic Centre,"Feb 3, 2024",12:06 PM EST,2470,2600,Saturday
+23,New York,Ottawa,TD Place,"Feb 4, 2024",1:08 PM EST,8062,9862,Sunday
+24,Montreal,Boston,Tsongas Center,"Feb 4, 2024",3:39 PM EST,4210,6500,Sunday
+25,Toronto,Boston,Tsongas Center,"Feb 14, 2024",7:08 PM EST,1791,6500,Wednesday
+26,Ottawa,Minnesota,Xcel Energy Center,"Feb 14, 2024",7:08 PM CST,6276,18300,Wednesday
+27,Montreal,Toronto,Scotiabank Arena,"Feb 16, 2024",7:11 PM EST,19285,18800,Friday
+28,Minnesota,Ottawa,TD Place,"Feb 17, 2024",2:08 PM EST,8407,9862,Saturday
+29,New York,Boston,Tsongas Center,"Feb 17, 2024",4:09 PM EST,4002,6500,Saturday
+30,Minnesota,Montreal,Place Bell,"Feb 18, 2024",1:08 PM EST,10172,10062,Sunday
+31,Ottawa,Boston,Tsongas Center,"Feb 19, 2024",4:39 PM EST,2849,6500,Monday
+32,Ottawa,Boston,Tsongas Center,"Feb 21, 2024",7:09 PM EST,1889,6500,Wednesday
+33,Montreal,New York,UBS Arena,"Feb 21, 2024",7:21 PM EST,2128,17225,Wednesday
+34,New York,Toronto,Mattamy Athletic Centre,"Feb 23, 2024",7:09 PM EST,2494,2600,Friday
+35,Ottawa,Montreal,Verdun Auditorium,"Feb 24, 2024",2:38 PM EST,3232,4043,Saturday
+36,Boston,Minnesota,Xcel Energy Center,"Feb 25, 2024",3:08 PM CST,10186,18300,Sunday
+37,Toronto,Minnesota,3M Arena at Mariucci,"Feb 27, 2024",7:08 PM CST,2718,10257,Tuesday
+38,New York,Ottawa,TD Place,"Feb 28, 2024",7:08 PM EST,6889,9862,Wednesday
+39,Toronto,Ottawa,TD Place,"Mar 2, 2024",3:36 PM EST,8447,9862,Saturday
+40,Boston,Montreal,Verdun Auditorium,"Mar 2, 2024",4:09 PM EST,3232,4043,Saturday
+41,Minnesota,New York,UBS Arena,"Mar 3, 2024",12:38 PM EST,4459,17225,Sunday
+42,Ottawa,Minnesota,Xcel Energy Center,"Mar 5, 2024",7:08 PM CST,4585,18300,Tuesday
+43,Montreal,New York,Total Mortgage Arena,"Mar 6, 2024",7:08 PM EST,728,8412,Wednesday
+44,Boston,Toronto,Mattamy Athletic Centre,"Mar 6, 2024",7:08 PM EST,2479,2600,Wednesday
+45,Montreal,Toronto,Mattamy Athletic Centre,"Mar 8, 2024",7:08 PM EST,2554,2600,Friday
+46,New York,Boston,Tsongas Center,"Mar 10, 2024",3:07 PM EST,4607,6500,Sunday
+47,Ottawa,Montreal,Place Bell,"Mar 10, 2024",4:09 PM EST,10172,10062,Sunday
+48,Boston,Minnesota,Xcel Energy Center,"Mar 13, 2024",7:08 PM CST,4669,18300,Wednesday
+49,New York,Minnesota,Xcel Energy Center,"Mar 16, 2024",2:36 PM CST,9006,18300,Saturday
+50,Ottawa,Boston,Little Caesars Arena,"Mar 16, 2024",6:10 PM EST,13736,19515,Saturday
+51,Toronto,Montreal,PPG Paints Arena,"Mar 17, 2024",12:38 PM EST,8850,18187,Sunday
+52,Ottawa,New York,Total Mortgage Arena,"Mar 20, 2024",7:08 PM EST,1702,8412,Wednesday
+53,Boston,Toronto,Mattamy Athletic Centre,"Mar 20, 2024",7:08 PM EST,2525,2600,Wednesday
+54,Toronto,Ottawa,TD Place,"Mar 23, 2024",1:09 PM EST,8448,9862,Saturday
+55,Montreal,Minnesota,Xcel Energy Center,"Mar 24, 2024",3:08 PM CST,7268,18300,Sunday
+56,Boston,New York,UBS Arena,"Mar 25, 2024",7:08 PM EST,2834,17225,Monday
+57,Minnesota,Montreal,Verdun Auditorium,"Apr 18, 2024",7:08 PM EST,3084,4043,Thursday
+58,Toronto,Boston,Tsongas Center,"Apr 18, 2024",7:08 PM EST,4084,6500,Thursday
+59,Toronto,Montreal,Bell Centre,"Apr 20, 2024",1:11 PM EST,21105,21273,Saturday
+60,Boston,New York,Prudential Center,"Apr 20, 2024",3:40 PM EST,5132,16514,Saturday
+61,Minnesota,Ottawa,TD Place,"Apr 20, 2024",7:06 PM EST,8110,9862,Saturday
+62,Boston,Ottawa,TD Place,"Apr 24, 2024",7:08 PM EST,7686,9862,Wednesday
+63,New York,Montreal,Verdun Auditorium,"Apr 24, 2024",7:09 PM EST,3232,4043,Wednesday
+64,Montreal,Ottawa,TD Place,"Apr 27, 2024",12:36 PM EST,8452,9862,Saturday
+65,Boston,Minnesota,Xcel Energy Center,"Apr 27, 2024",1:08 PM CST,9977,18300,Saturday
+66,Toronto,New York,UBS Arena,"Apr 28, 2024",1:08 PM EST,1668,17225,Sunday
+67,Ottawa,New York,Prudential Center,"Apr 30, 2024",7:10 PM EST,2992,16514,Tuesday
+68,Minnesota,Toronto,Mattamy Athletic Centre,"May 1, 2024",7:09 PM EST,2571,2600,Wednesday
+69,Minnesota,New York,UBS Arena,"May 4, 2024",1:08 PM EST,1563,17225,Saturday
+70,Montreal,Boston,Tsongas Center,"May 4, 2024",3:38 PM EST,5964,6500,Saturday
+71,Ottawa,Toronto,Mattamy Athletic Centre,"May 5, 2024",7:07 PM EST,2620,2600,Sunday
+81,Minnesota,Toronto,Coca-Cola Coliseum,"May 8, 2024",7:08 PM EST,8473,7851,Wednesday
+82,Boston,Montreal,Place Bell,"May 9, 2024",7:09 PM EST,9135,10062,Thursday
+83,Minnesota,Toronto,Coca-Cola Coliseum,"May 10, 2024",7:08 PM EST,8581,7851,Friday
+84,Boston,Montreal,Place Bell,"May 11, 2024",7:09 PM EST,10172,10062,Saturday
+85,Toronto,Minnesota,Xcel Energy Center,"May 13, 2024",7:08 PM EST,3344,18300,Monday
+86,Montreal,Boston,Tsongas Center,"May 14, 2024",7:09 PM EST,2781,6500,Tuesday
+87,Toronto,Minnesota,Xcel Energy Center,"May 15, 2024",7:08 PM EST,2766,18300,Wednesday
+88,Minnesota,Toronto,Coca-Cola Coliseum,"May 17, 2024",7:09 PM EST,8501,7851,Friday
+89,Minnesota,Boston,Tsongas Center,"May 19, 2024",5:14 PM EST,4508,6500,Sunday
+90,Minnesota,Boston,Tsongas Center,"May 21, 2024",7:14 PM EST,4543,6500,Tuesday
+91,Boston,Minnesota,Xcel Energy Center,"May 24, 2024",6:15 PM CST,9054,18300,Friday
+92,Boston,Minnesota,Xcel Energy Center,"May 26, 2024",5:15 PM CST,13104,18300,Sunday
+93,Minnesota,Boston,Tsongas Center,"May 29, 2024",7:15 PM EST,6309,6500,Wednesday
+100,Boston,Toronto,Coca-Cola Coliseum,"Nov 30, 2024",2:15 PM EST,8089,7851,Saturday
+101,Ottawa,Montréal,Place Bell,"Nov 30, 2024",5:18 PM EST,10033,10062,Saturday
+102,New York,Minnesota,Xcel Energy Center,"Dec 1, 2024",5:16 PM CST,8022,18300,Sunday
+103,Toronto,Ottawa,TD Place,"Dec 3, 2024",7:15 PM EST,6451,9862,Tuesday
+104,Minnesota,Boston,Tsongas Center,"Dec 4, 2024",7:16 PM EST,3811,6500,Wednesday
+105,New York,Montréal,Place Bell,"Dec 4, 2024",7:10 PM EST,5415,10062,Wednesday
+106,Montréal,Ottawa,Canadian Tire Centre,"Dec 6, 2024",7:07 PM EST,11065,19153,Friday
+107,Minnesota,Toronto,Coca-Cola Coliseum,"Dec 7, 2024",2:12 PM EST,7584,7851,Saturday
+108,New York,Boston,Tsongas Center,"Dec 8, 2024",4:07 PM EST,4003,6500,Sunday
+109,Ottawa,Boston,Tsongas Center,"Dec 17, 2024",7:07 PM EST,2854,6500,Tuesday
+110,Toronto,New York,Prudential Center,"Dec 18, 2024",7:13 PM EST,2851,16514,Wednesday
+111,Ottawa,Minnesota,Xcel Energy Center,"Dec 19, 2024",7:07 PM CST,4686,18300,Thursday
+112,Montréal,Toronto,Coca-Cola Coliseum,"Dec 21, 2024",2:12 PM EST,8251,7851,Saturday
+113,Minnesota,New York,Prudential Center,"Dec 22, 2024",12:07 PM EST,2722,16514,Sunday
+114,Boston,Toronto,Coca-Cola Coliseum,"Dec 27, 2024",7:08 PM EST,8264,7851,Friday
+115,Montréal,Minnesota,Xcel Energy Center,"Dec 28, 2024",1:12 PM CST,8726,18300,Saturday
+116,Ottawa,New York,Prudential Center,"Dec 29, 2024",1:07 PM EST,2946,16514,Sunday
+117,Boston,Montréal,Place Bell,"Dec 30, 2024",7:08 PM EST,10172,10062,Monday
+118,Ottawa,Toronto,Coca-Cola Coliseum,"Dec 31, 2024",7:07 PM EST,8278,7851,Tuesday
+119,Boston,Minnesota,Xcel Energy Center,"Jan 2, 2025",6:38 PM CST,5066,18300,Thursday
+120,New York,Minnesota,Xcel Energy Center,"Jan 4, 2025",1:12 PM CST,6414,18300,Saturday
+121,Montréal,Boston,Climate Pledge Arena,"Jan 5, 2025",1:08 PM PST,12608,17200,Sunday
+122,Ottawa,New York,Prudential Center,"Jan 7, 2025",7:07 PM EST,1569,16514,Tuesday
+123,Boston,Minnesota,Xcel Energy Center,"Jan 8, 2025",6:37 PM CST,4248,18300,Wednesday
+124,Montréal,Toronto,Rogers Arena,"Jan 8, 2025",7:15 PM PST,19038,18910,Wednesday
+125,Boston,Ottawa,TD Place,"Jan 11, 2025",2:12 PM EST,8295,9862,Saturday
+126,Toronto,New York,Prudential Center,"Jan 12, 2025",12:07 PM EST,3258,16514,Sunday
+127,Montréal,Minnesota,Ball Arena,"Jan 12, 2025",1:12 PM MST,14018,18007,Sunday
+128,Toronto,Ottawa,TD Place,"Jan 14, 2025",7:07 PM EST,6526,9862,Tuesday
+129,Minnesota,New York,Prudential Center,"Jan 15, 2025",7:07 PM EST,1780,16514,Wednesday
+130,Minnesota,Montréal,Place Bell,"Jan 17, 2025",7:07 PM EST,10172,10062,Friday
+131,Ottawa,Montréal,Videotron Centre,"Jan 19, 2025",1:10 PM EST,18259,18259,Sunday
+132,Ottawa,Minnesota,Xcel Energy Center,"Jan 21, 2025",6:08 PM CST,4165,18300,Tuesday
+133,Toronto,Boston,Tsongas Center,"Jan 22, 2025",7:08 PM EST,3951,6500,Wednesday
+134,New York,Toronto,Scotiabank Arena,"Jan 25, 2025",2:13 PM EST,19102,18800,Saturday
+135,Boston,Minnesota,Xcel Energy Center,"Jan 26, 2025",2:15 PM CST,7838,18300,Sunday
+136,New York,Ottawa,TD Place,"Jan 27, 2025",7:07 PM EST,5629,9862,Monday
+137,Toronto,Minnesota,Xcel Energy Center,"Jan 28, 2025",6:07 PM CST,4540,18300,Tuesday
+138,Ottawa,Montréal,Place Bell,"Jan 29, 2025",7:07 PM EST,6150,10062,Wednesday
+139,Toronto,Montréal,Place Bell,"Jan 30, 2025",7:33 PM EST,7242,10062,Thursday
+140,New York,Boston,Tsongas Center,"Jan 31, 2025",7:08 PM EST,5912,6500,Friday
+141,Ottawa,Toronto,Coca-Cola Coliseum,"Feb 1, 2025",2:10 PM EST,8351,7851,Saturday
+142,Montréal,New York,Prudential Center,"Feb 2, 2025",1:09 PM EST,4346,16514,Sunday
+143,Minnesota,Toronto,Coca-Cola Coliseum,"Feb 11, 2025",7:07 PM EST,8183,7851,Tuesday
+144,Boston,New York,Prudential Center,"Feb 12, 2025",7:07 PM EST,1729,16514,Wednesday
+145,Minnesota,Ottawa,TD Place,"Feb 13, 2025",7:07 PM EST,5854,9862,Thursday
+146,Boston,Toronto,Coca-Cola Coliseum,"Feb 14, 2025",7:07 PM EST,8124,7851,Friday
+147,New York,Montréal,Place Bell,"Feb 15, 2025",2:13 PM EST,10172,10062,Saturday
+148,Minnesota,Boston,Tsongas Center,"Feb 16, 2025",1:10 PM EST,6032,6500,Sunday
+149,Toronto,Ottawa,Rogers Place,"Feb 16, 2025",2:12 PM EST,17518,18347,Sunday
+150,Boston,New York,Prudential Center,"Feb 17, 2025",4:10 PM EST,3715,16514,Monday
+151,Minnesota,Montréal,Place Bell,"Feb 18, 2025",7:08 PM EST,6696,10062,Tuesday
+152,Toronto,New York,Prudential Center,"Feb 19, 2025",7:07 PM EST,1569,16514,Wednesday
+153,Boston,Ottawa,TD Place,"Feb 20, 2025",7:07 PM EST,5458,9862,Thursday
+154,Montréal,Ottawa,TD Place,"Feb 22, 2025",2:05 PM EST,8424,9862,Saturday
+155,Toronto,Minnesota,Xcel Energy Center,"Feb 23, 2025",12:37 PM CST,8770,18300,Sunday
+156,Boston,New York,KeyBank Center,"Feb 23, 2025",4:12 PM EST,8512,18595,Sunday
+157,Toronto,Montréal,Place Bell,"Feb 25, 2025",7:08 PM EST,6101,10062,Tuesday
+158,New York,Ottawa,TD Place,"Feb 26, 2025",7:05 PM EST,5005,9862,Wednesday
+159,Boston,Montréal,Bell Centre,"Mar 1, 2025",2:11 PM EST,17324,21273,Saturday
+160,Minnesota,Montréal,Place Bell,"Mar 4, 2025",7:08 PM EST,8923,10062,Tuesday
+161,New York,Boston,Tsongas Center,"Mar 5, 2025",7:10 PM EST,3252,6500,Wednesday
+162,Montréal,Toronto,Coca-Cola Coliseum,"Mar 6, 2025",7:07 PM EST,8618,7851,Thursday
+163,Ottawa,Minnesota,Lenovo Center,"Mar 7, 2025",7:12 PM EST,10782,18680,Friday
+164,Montréal,Boston,Agganis Arena,"Mar 8, 2025",2:07 PM EST,5968,6150,Saturday
+165,Minnesota,Toronto,Coca-Cola Coliseum,"Mar 9, 2025",1:07 PM EST,8510,7851,Sunday
+166,Minnesota,Ottawa,TD Place,"Mar 11, 2025",7:08 PM EST,5851,9862,Tuesday
+167,Montréal,New York,Prudential Center,"Mar 12, 2025",7:10 PM EST,1944,16514,Wednesday
+168,Boston,Ottawa,TD Place,"Mar 15, 2025",2:12 PM EST,8096,9862,Saturday
+169,Minnesota,New York,Little Caesars Arena,"Mar 16, 2025",7:42 PM EST,14288,19515,Sunday
+170,Montréal,Boston,Tsongas Center,"Mar 18, 2025",7:07 PM EST,3375,6500,Tuesday
+171,New York,Toronto,Coca-Cola Coliseum,"Mar 19, 2025",7:08 PM EST,8351,7851,Wednesday
+172,Ottawa,New York,Prudential Center,"Mar 22, 2025",12:04 PM EST,4767,16514,Saturday
+173,Toronto,Montréal,Place Bell,"Mar 23, 2025",12:08 PM EST,10172,10062,Sunday
+174,New York,Ottawa,TD Place,"Mar 25, 2025",7:07 PM EST,5707,9862,Tuesday
+175,Toronto,Boston,Agganis Arena,"Mar 26, 2025",7:08 PM EST,6028,6150,Wednesday
+176,Montréal,Minnesota,Xcel Energy Center,"Mar 26, 2025",7:07 PM CST,6330,18300,Wednesday
+177,Ottawa,Boston,Enterprise Center,"Mar 29, 2025",1:13 PM CST,8578,18096,Saturday
+178,Toronto,Minnesota,Xcel Energy Center,"Mar 30, 2025",12:07 PM CST,9536,18300,Sunday
+179,New York,Montréal,Place Bell,"Apr 1, 2025",7:08 PM EST,8798,10062,Tuesday
+180,Ottawa,Boston,Tsongas Center,"Apr 2, 2025",7:09 PM EST,3807,6500,Wednesday
